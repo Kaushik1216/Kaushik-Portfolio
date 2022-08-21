@@ -1,0 +1,62 @@
+
+#navbar{
+    height: 40px;
+    background-color: #f39c12;
+    overflow: hidden;
+    display: flex;
+   flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    
+
+}
+#logo{
+    width: 30px;
+   color: #111;
+    font-weight:800 ;
+    border-radius: 100%;
+    padding-left: 20px; 
+
+}
+.checkbox{
+    opacity:0;
+    position: absolute;
+
+}
+.label{
+    display: flex;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    background-color: #111;
+    align-items:center ;
+    justify-content:space-between;
+    padding: 5px;
+    position: relative;
+    width:50px;
+
+}
+.ball{
+    background-color: #fff;
+    position: absolute;
+    top:2px;
+    left:2px;
+    border-radius: 50%;
+    height: 22px;
+    width:22px;
+    transition:  0.2s linear;
+  
+  }
+.checkbox:checked + .label .ball{
+   transform: translate(24px);
+   color:black;
+}
+.fa-moon{
+    color:#f1c40f;
+}
+.fa-sun{
+    color:#f39c12;
+}
