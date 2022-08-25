@@ -1,8 +1,8 @@
 
 #navbar{
     height: 40px;
-    background-color: #f39c12;
-    overflow: hidden;
+    /* background-color: #f39c12; */
+    /* overflow: hidden; */
     display: flex;
    flex-direction: column;
     align-items: center;
@@ -10,12 +10,10 @@
     position: fixed;
     top: 0;
     width: 100%;
-    
 
 }
 #logo{
     width: 30px;
-   color: #111;
     font-weight:800 ;
     border-radius: 100%;
     padding-left: 20px; 

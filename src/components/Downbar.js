@@ -19,36 +19,37 @@ export default function Downbar() {
   }
   return (
     <>  
-    <body className="align">
+    <div className="align"  >
 
     <div className="arrow" id="down">
      
-    <div className="arrow1 display" ref={display}><i className="fa-solid fa-arrow-up fa-2x" ref={arrowup} onClick={()=>arrow(1)}></i></div>
-      <div className="arrow2"><i className="fa-solid fa-arrow-down fa-2x" ref={arrowdown} onClick={()=>arrow(2)}></i></div>
+    <div className="arrow1 display" ref={display}><i className="fa-solid fa-angle-up fa-2x" style={{color:"#fff"}} ref={arrowup} onClick={()=>arrow(1)}></i></div>
+      <div className="arrow2"><i className="fa-solid fa-angle-down fa-2x" style={{color:"#fff"}} ref={arrowdown} onClick={()=>arrow(2)}></i></div>
       </div>
    
     <div className="downbar" id="footer"ref={downbar}>
       
       <div className="row down">
         <div className="col">
-         <div className="row"><i className="fa-solid fa-info"></i></div> 
+         <div className="row"><i className="fa-solid fa-info" style={{color:"#fff"}}></i></div> 
           <div className="row"><a href="/#">About</a></div>
         </div>
         <div className="col">
-        <div className="row"><i className="fa-solid fa-rocket"></i></div> 
+        <div className="row"><i className="fa-solid fa-rocket"style={{color:"#fff"}}></i></div> 
           <div className="row"> <a href="/#">Work</a></div>
           </div>
+          <div className="col">
+        <div className="row"><i className="fa-solid fa-heart"style={{color:"#fff"}}></i></div> 
+          <div className="row"> <a href="/#">Contact</a></div>
+        </div>
         <div className="col">
-        <div className="row"><i className="fa-solid fa-info"></i></div> 
+        <div className="row"><i className="fa-solid fa-info"style={{color:"#fff"}}></i></div> 
           <div className="row"> <a href="/#">Skills</a></div>
        </div>
-        <div className="col">
-        <div className="row"><i className="fa-solid fa-heart"></i></div> 
-          <div className="row"> <a href="/#">Connect</a></div>
-        </div>
+       
       </div>
       </div>
-      </body>
+      </div>
     </>
   );
 }
