@@ -1,9 +1,11 @@
 import React from 'react'
+import '../style/contact.css';
 
-export default function Contact() {
+export default function Contact(p) {
+   
   return (
-    <div>
-        
-    </div>
+    <>
+  
+    </>
   )
 }

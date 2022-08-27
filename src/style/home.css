@@ -1,6 +1,7 @@
 #home{
     /* background-color:yellow; */
-}#left{
+}
+#left{
     height: 100%;
     background-color: antiquewhite;
     display: flex;
@@ -11,6 +12,9 @@
     overflow: hidden;
     /* padding: 200px 50px 200px 50px; */
     margin-bottom: 0;
+}
+#logo{
+
 }
 #right{
     /* background-color: aqua; */
