@@ -1,5 +1,6 @@
 import React from 'react'
 import '../style/navbar.css'
+import { Link } from 'react-router-dom';
 import {useState} from 'react';
 export default function Navbar(props) {
   const[font,setFont]=useState('sun');
@@ -18,10 +19,10 @@ export default function Navbar(props) {
       </div>
       <div className="menu-link">
         <ul>
-          <li><a href="/">About</a></li>
-          <li><a href="/skills">Skills</a></li>
-          <li><a href="/project">Project</a></li>
-          <li><a href="/contact">Contact</a></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/skills">Skills</Link></li>
+          <li><Link to="/project">Project</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
       </div>
       <div className="theme" >
