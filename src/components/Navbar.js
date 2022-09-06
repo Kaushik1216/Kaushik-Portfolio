@@ -26,7 +26,7 @@ export default function Navbar(props) {
         </ul>
       </div>
       <div className="theme" >
-      <input type="checkbox"  className="checkbox" id="checkbox" name="checkBox" onChange={props.themeChange}/><label htmlFor="checkbox" class="label">
+      <input type="checkbox"  className="checkbox" id="checkbox" name="checkBox" onChange={props.themeChange}/><label htmlFor="checkbox" className="label">
   
       <i className={`fa-solid fa-1x fa-${font}`} onClick={fontChange}></i>
    
