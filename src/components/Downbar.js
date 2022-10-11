@@ -1,5 +1,6 @@
 import React ,{useRef}from "react";
 import '../style/downbar.css'
+import { Link } from 'react-router-dom';
 export default function Downbar() {
   const arrowup=useRef(null);
   const arrowdown=useRef(null);
@@ -32,19 +33,19 @@ export default function Downbar() {
       <div className="row down">
         <div className="col">
          <div className="row"><i className="fa-solid fa-info" style={{color:"#fff"}}></i></div> 
-          <div className="row"><a href="/#">About</a></div>
+          <div className="row"><Link to="/about">About</Link></div>
         </div>
         <div className="col">
         <div className="row"><i className="fa-solid fa-rocket"style={{color:"#fff"}}></i></div> 
-          <div className="row"> <a href="/#">Work</a></div>
+          <div className="row"> <Link to="/skills">Skills</Link></div>
           </div>
           <div className="col">
         <div className="row"><i className="fa-solid fa-heart"style={{color:"#fff"}}></i></div> 
-          <div className="row"> <a href="/#">Contact</a></div>
+          <div className="row"> <Link to="/project">Project</Link></div>
         </div>
         <div className="col">
         <div className="row"><i className="fa-solid fa-info"style={{color:"#fff"}}></i></div> 
-          <div className="row"> <a href="/#">Skills</a></div>
+          <div className="row"> <Link to="/contact">Contact</Link></div>
        </div>
        
       </div>

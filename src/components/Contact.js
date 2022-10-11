@@ -9,9 +9,9 @@ export default function Contact() {
 
     emailjs.sendForm('service_8yv3on1', 'template_71fj839', form.current, '46M5VR9yZGLRuZYYn')
       .then((result) => {
-          console.log(result.text);
+         alert("your email send")
       }, (error) => {
-          console.log(error.text);
+          alert("Error occure")
       });
    }
   return (
@@ -30,7 +30,7 @@ export default function Contact() {
           if you any want my contribution or have any question contact me!
          </h6>
       </div>
-            <form ref={form} onSubmit={sendmail} id="form" action="/contact">
+            <form ref={form} onSubmit={sendmail} id="form">
               <div className="container-fluid">
               <div className="row">
                 <div className="col-md-6 col-12">
@@ -49,17 +49,19 @@ export default function Contact() {
               </div>
               <div className="row">
               <div className="inputgroup" id="subject">
-                <input type="text" placeholder='Subject'name='subject'style={{width:"93.5%"}}/>
+                <input type="text" placeholder='Subject'name='subject'/>
               </div>
               </div> 
               <div className="row" id="textarea">
-                <div className="col">
-                <textarea  className="area" rows="6"style={{width:"93.5%"}} name='text' placeholder="Message"></textarea>
+               <div className="col">
+                <textarea  className="area" rows="6"  style={{  width:"100%"}}name='text' placeholder="Message"></textarea>
                 </div>
               
               </div>
-              <div className="row mt-2 pd-2 button">
+              <div className="row mt-2 pd-2 button" >
+                <div className="col button2" >
                 <button type="Submit" className=' form-btn'>Send</button>
+                </div>
                 </div>    
                 </div>                                                                                      
             </form>

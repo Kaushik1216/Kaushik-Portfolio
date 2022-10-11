@@ -29,9 +29,7 @@ export default function Navbar(props) {
       <input type="checkbox"  className="checkbox" id="checkbox" name="checkBox" onChange={props.themeChange}/><label htmlFor="checkbox" className="label">
   
       <i className={`fa-solid fa-1x fa-${font}`} onClick={fontChange}></i>
-   
-    
-      <div className="ball"></div>
+  
       </label>
       </div>
     </nav>

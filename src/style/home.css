@@ -32,4 +32,9 @@ padding-left: 30px;
     #name{
         font-size: 40px;
     }
+    .socialIcon{
+        display: flex;
+        justify-content: space-around;
+        justify-items:center ;
+    }
 }

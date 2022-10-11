@@ -1,0 +1,13 @@
+#about{
+    border:2px solid black;
+  display:block;
+  margin-left: auto;
+  margin-right:auto;
+  width: 70%;
+  margin-top: 5%;
+}
+#about .topic{
+   font-size: 40px;
+   font-weight: bolder;
+   color:#67e0a6;
+}
