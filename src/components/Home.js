@@ -1,24 +1,9 @@
 import React from "react";
 import "../style/home.css";
 import { Instagram ,Facebook,Github,Linkdin} from "../datas/socialicon";
-// import {motion} from 'framer-motion';
 import me from "./images/profile-img.png";
-import { NavLink } from "react-router-dom";
 import {motion} from "framer-motion"
 export default function Home() {
-  // const item = {
-  //   hidden: {
-  //     x: "0",
-  //     // opacity:0,
-  //     transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.85 }
-  //   },
-  //   visible: {
-  //     x: "10%",
-  //     // opacity:1,
-  //     transition: { ease: [0.455, 0.03, 0.515, 0.955], duration: 0.75 }
-  //   }
-  // }
-  
   const item = {
     visible: {
       opacity: 1,
@@ -61,30 +46,24 @@ export default function Home() {
                      initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
                      transition={{type:'spring', duration:1, delay:0.25}}
-                     > <NavLink target="_blank" to="https://github.com/Kaushik1216"><Github></Github></NavLink></motion.div>
+                     > <a target="_blank"rel="noreferrer" href="https://github.com/Kaushik1216"><Github></Github></a></motion.div>
                     <motion.div className="col-1"
                      initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
                      transition={{type:'spring', duration:1, delay:0.5}}
-                     > <NavLink target="_blank" to="https://github.com/Kaushik1216"><Linkdin></Linkdin></NavLink></motion.div>
+                     > <a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kaushik-vishwakarma-103b20223/"><Linkdin></Linkdin></a></motion.div>
                     <motion.div className="col-1"
                      initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
                      transition={{type:'spring', duration:1, delay:0.75}}
-                     > <NavLink target="_blank" to="https://github.com/Kaushik1216">
-                    <Facebook></Facebook></NavLink></motion.div>
+                     > <a rel="noreferrer" target="_blank" href="https://www.facebook.com/profile.php?id=100079232611563">
+                    <Facebook></Facebook></a></motion.div>
                     <motion.div className="col-1"
                      initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
                      transition={{type:'spring', duration:1, delay:1}}
-                     ><NavLink target="_blank" to="https://github.com/Kaushik1216"><Instagram></Instagram></NavLink></motion.div>
-                   
-                   
-                   
-                    
-                    
-                    
-                 </div>
+                     ><a rel="noreferrer" target="_blank" href="https://www.instagram.com/kaushik_1090/"><Instagram></Instagram></a></motion.div>
+                   </div>
                 </motion.div>
 
                 
