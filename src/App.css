@@ -4,6 +4,9 @@
     margin: 0;
     box-sizing:border-box;
 }
-#home{
-    margin-top: 40px;
+body{
+    background-color:#ECECEC;
+    /* background-color: #0A192F; */
+    /* background-color: #29272A; */
+    /* color:#ECECEC; */
 }

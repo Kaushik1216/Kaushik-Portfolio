@@ -1,23 +1,16 @@
 import React from 'react'
 import '../style/navbar.css'
 import { Link } from 'react-router-dom';
-import {useState} from 'react';
 export default function Navbar(props) {
-  const[font,setFont]=useState('sun');
-   const fontChange=()=>{
-     if(font==='sun'){
-      setFont('moon');
-     }else{
-      setFont('sun');
-     }
-   }
+  const navbar={
+  color:`${props.text}`}
   return (
     <>
     <nav className='menu-nav'>
       <div className="logo">
         <h2>Kaushik</h2>
       </div>
-      <div className="menu-link">
+      <div className="menu-link" style={navbar}>
         <ul>
           <li><Link to="/about">About</Link></li>
           <li><Link to="/skills">Skills</Link></li>
@@ -28,7 +21,7 @@ export default function Navbar(props) {
       <div className="theme" >
       <input type="checkbox"  className="checkbox" id="checkbox" name="checkBox" onChange={props.themeChange}/><label htmlFor="checkbox" className="label">
   
-      <i className={`fa-solid fa-1x fa-${font}`} onClick={fontChange}></i>
+      <i className={`fa-solid fa-1x fa-${props.font}`} ></i>
   
       </label>
       </div>

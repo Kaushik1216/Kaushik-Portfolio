@@ -1,66 +1,77 @@
-#name{
+
+#name {
     font-size: 50px;
-    font-weight:bolder;
+    font-weight: bolder;
 }
-#title{
+
+#title {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: -20px;
     margin-left: 3px;
 }
-.main_header #kaushik{
-display: flex;
-justify-content: center;
-align-items: center;
 
-}
-.main_header #img{
+.main_header #kaushik {
     display: flex;
-justify-content: center;
-align-items: center;
-padding-left: 30px;
-}
-#kaushik .socialIcon{
-    
-    margin-top:30px;
+    justify-content: center;
+    align-items: center;
+
 }
 
-#imgdiv{
+.main_header #img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 30px;
+}
+
+#kaushik .socialIcon {
+
+    margin-top: 30px;
+}
+
+#imgdiv {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-  }
-  .main_header #kaushik{
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-start;
+}
+
+.main_header #kaushik {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+@media screen and (max-width:780px) {
+    #imgdiv {
+        justify-content: center;
     }
-  @media screen and (max-width:780px) {
-      #imgdiv{
-          justify-content: center;
-        }
-        #kaushik{
-          justify-content: center;
-          display: none;
-        }
-  }
-@media screen and (max-width:768px) {
-    .main_header #kaushik{
-        margin-top:100px;
+
+    #kaushik {
+        justify-content: center;
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .main_header #kaushik {
+        margin-top: 100px;
         margin-bottom: 50px;
-        margin-left: 40px;
         text-align: center;
     }
-    .main_header #img{
+
+    .main_header #img {
         padding-left: 30px;
         margin-left: 30px;
     }
-    #name{
+
+    #name {
         font-size: 40px;
     }
-    .socialIcon{
+
+    .socialIcon {
         display: flex;
         justify-content: space-around;
-        justify-items:center ;
+        justify-items: center;
     }
 }
