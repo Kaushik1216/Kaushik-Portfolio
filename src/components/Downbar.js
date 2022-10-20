@@ -2,6 +2,28 @@ import React ,{useRef}from "react";
 import '../style/downbar.css'
 import { Link } from 'react-router-dom';
 export default function Downbar() {
+  // const [windowSize, setWindowSize] = useState(getWindowSize());
+
+  // useEffect(() => {
+  //   function handleWindowResize() {
+  //     setWindowSize(getWindowSize());
+  //   }
+
+  //   window.addEventListener('resize', handleWindowResize);
+
+  //   return () => {
+  //     window.removeEventListener('resize', handleWindowResize);
+  //   };
+  // }, []);
+  // function getWindowSize() {
+  //   const {innerWidth, innerHeight} = window;
+  //   if(innerWidth<701){
+  //     downbar.current.style.display="none";
+  //     arrowt.current.style.display="none";
+  //   }
+  //   return {innerWidth, innerHeight};
+  // }
+  // console.log(windowSize.innerWidth);
   const arrowup=useRef(null);
   const arrowdown=useRef(null);
   const downbar=useRef(null);
