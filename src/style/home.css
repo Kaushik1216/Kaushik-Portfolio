@@ -24,6 +24,26 @@ padding-left: 30px;
     
     margin-top:30px;
 }
+
+#imgdiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .main_header #kaushik{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  @media screen and (max-width:780px) {
+      #imgdiv{
+          justify-content: center;
+        }
+        #kaushik{
+          justify-content: center;
+          display: none;
+        }
+  }
 @media screen and (max-width:768px) {
     .main_header #kaushik{
         margin-top:100px;

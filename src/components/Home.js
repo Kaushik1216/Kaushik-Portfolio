@@ -30,15 +30,14 @@ export default function Home() {
         <div class="row">
           <div class="col-md-10 col-12 mx-auto">
             <div className="row">
-              <div className="col-md-6 col-12" id="kaushik">
+              <div className="col-md-6 col-12 " id="kaushik">
                 <motion.div>
                   <motion.h5
                   variants={item}
                   initial="hidden"
                   animate="visible">
                     <p id="title">Hi<sup><img src={hand} style={{height:"40px"}}/></sup>I'm</p></motion.h5>
-                  {/* <h2 id="name">Hi <img src={hand} style={{height:"60px"}}/></h2>
-                  <h2 id="name">I'm</h2> */}
+
                   <h2 id="name"> Kaushik Vishwakarma</h2>
                   <h6>
                     Enthusiatic tech guy, who love to code,playing with errors
@@ -71,7 +70,7 @@ export default function Home() {
 
                 
               </div>
-              <div className="col-md-6 col-12">
+              <div className="col-md-6 col-12" id="imgdiv">
                 <div id="img">
                   <img src={me} alt="kaushi" style={{height:"500px"}}/>
                 </div>
