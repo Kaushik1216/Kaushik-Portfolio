@@ -1,4 +1,22 @@
-
+/* ntmlpage */
+#kaushik{
+    position: relative;
+}
+.codeup{
+    position: absolute;
+    top:0px;
+    left:10px;
+    opacity:0.3;
+    z-index:-467777777778!important;
+    font-family: 'Fasthand', cursive;
+}
+.codedown{
+    position: absolute;
+    bottom:0px;
+    left:10px;
+    opacity:0.2;
+    z-index:-467777777778!important;
+}
 #name {
     font-size: 50px;
     font-weight: bolder;
@@ -6,6 +24,7 @@
 #devinfo {
     font-size: 20px;
     font-weight: bolder;
+   
 }
 
 #title {

@@ -3,8 +3,8 @@ import "../style/home.css";
 import { Instagram ,Facebook,Github,Linkdin,Instagraml,Facebookl,Githubl,Linkdinl} from "../datas/socialicon";
 import me from "./images/profile-img.png";
 import hand from "./images/hi.gif"
+import { useState } from "react";
 import {motion} from "framer-motion"
-import html from "./html"
 export default function Home(props) {
   const item = {
     visible: {
@@ -25,6 +25,42 @@ export default function Home(props) {
         stiffness: 200
       }
     }}
+    const html={
+      "firstline":"<html>",
+      "second":"<body>",
+      "middleone":"<p>",
+      "middlelast":"</p>",
+      "lastsecond":"</body>",
+      "lastline":"</html>"
+    }
+    const coder={
+      "firstline":"#include<bits/stdc++.h>",
+      "second":"using namespace std",
+      "middleone":"cout<<",
+      "middlelast":"<<endl;",
+      "lastsecond":"int main(){",
+      "lastline":"return 0}"
+    }
+    const fulls={
+      "firstline":`const express=require("express")`,
+      "second":`const mongoose = require("mongoose");`,
+      "middleone":"res.render(\"",
+      "middlelast":"\")",
+      "lastsecond":`const conn = await mongoose.connect(process.env.MONGO_DATABASE_URI);`,
+      "lastline":`console.log([STATUS] Connected to Database:{conn.connection.name}")`
+    }
+    const [code,setCode]=useState(html);
+    function codechange(x){
+      if(x==="Coder"){
+        setCode(coder);
+      }
+      else if(x==="fulls"){
+        setCode(fulls)
+      }
+      else{
+        setCode(html)
+      }
+    }
   return (
     <>
       <div class="container-fluid main_header">
@@ -32,7 +68,10 @@ export default function Home(props) {
           <div class="col-md-10 col-12 mx-auto">
             <div className="row">
               <div className="col-md-6 col-12 " id="kaushik" style={{color:`${props.text}`}}>
+               
+                {/* <div></div> */}
                 <motion.div>
+                <div className="codeup">{`${code.firstline}`}<br/>{`${code.second}`}<br/><br/>{`${code.middleone}`}</div>
                   <motion.h5
                   variants={item}
                   initial="hidden"
@@ -40,7 +79,7 @@ export default function Home(props) {
                     <p id="title">Hi<sup><img src={hand} style={{height:"40px"}}/></sup>I'm</p></motion.h5>
 
                   <h1 id="name"> Kaushik <br/>Vishwakarma</h1>
-                  <h3 id="devinfo">CODER&nbsp;+&nbsp;FULL STACK DEVELOPER</h3>
+                  <h3 id="devinfo"style={{color:`${props.text==="#000"?"#0A192F":"#ECECEC"}`,textShadow:`2px 1px 1px ${props.text==="#fff"?"#fff":"#000"}`}}><span onMouseEnter={()=>{codechange("Coder")}}>CODER</span>&nbsp;+&nbsp;<span onMouseEnter={()=>{codechange("fulls")}}>FULL STACK DEVELOPER</span></h3>
                   <h6>
                     A Enthusiastiac newbie in tech who everyday try to learn new tech stuf
                   </h6>
@@ -92,7 +131,7 @@ export default function Home(props) {
                    </div>
                 </motion.div>
 
-                
+                <div className="codedown">{`${code.middlelast}`}<br/><br/>{`${code.lastsecond}`}<br/>{`${code.lastline}`}</div>
               </div>
               <div className="col-md-6 col-12" id="imgdiv">
                 <div id="img">
