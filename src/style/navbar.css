@@ -10,7 +10,10 @@
     grid-column:2/3;
     padding-top: 16px;
     padding-left: 70px;
-    color: black;
+   
+}
+.logo h2{
+    transition-duration: 1s;
 }
 
 .menu-link{
@@ -22,21 +25,18 @@
     display: flex;
    margin-top: 20px;
    margin-right: 0px;
-    border:2px solid black;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    transition-duration: 1s;
 }
 .checkbox{
     display: none;
 }
-/* .theme:hover{
 
-} */
 .menu-link ul{
     list-style: none;
     height: 70px;
@@ -44,14 +44,14 @@
     align-items: center;
 
 }
-.menu-link ul li>a{
+.menu-link ul >li{
     padding-right: 60px;
     color:black;
     display: inline;
     font-weight: 500;
-    transition-duration: 0.5s;
+    transition-duration: 1s;
 }
-.menu-link ul li>a:hover{
+.menu-link ul >li:hover{
  
     background: linear-gradient(
         to right, #f32170, #ff6b08,
@@ -87,7 +87,7 @@
         padding-top: 5px;
         align-items:center ;
     }
-      .menu-link ul li>a{
+      .menu-link ul >li{
       display: none;
     }
     .menu-nav .theme{

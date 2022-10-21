@@ -6,7 +6,5 @@
 }
 body{
     background-color:#ECECEC;
-    /* background-color: #0A192F; */
-    /* background-color: #29272A; */
-    /* color:#ECECEC; */
+    transition: 0.5s;
 }
