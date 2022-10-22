@@ -8,3 +8,8 @@ body{
     background-color:#ECECEC;
     transition: 0.5s;
 }
+#app{
+    margin-left: 8%;
+    margin-right: 8%;
+}
+

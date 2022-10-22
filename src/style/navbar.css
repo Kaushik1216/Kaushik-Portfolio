@@ -1,6 +1,6 @@
 .menu-nav{
     display: grid;
-    grid-template-columns: 4.3% 2fr 1fr 0.3fr 5%;
+    grid-template-columns: 0% 2fr 1fr 0.3fr 0%;
     font-size: larger;
     width: 100%;
     height: 70px;
@@ -9,7 +9,7 @@
     display: grid;
     grid-column:2/3;
     padding-top: 16px;
-    padding-left: 70px;
+    /* padding-left: 70px; */
    
 }
 .logo h2{
@@ -75,7 +75,8 @@
     .menu-nav {
         height: 40px;
       
-        grid-template-columns: 2rem 2fr 2fr  2rem;
+        grid-template-columns: 0% 2fr 2fr  0%;
+        /* grid-template-columns: 2rem 2fr 2fr  2rem; */
       }
     
     .menu-nav .logo{
@@ -102,7 +103,7 @@
     .menu-nav {
         height: 40px;
       
-        grid-template-columns: 1rem 2fr 2fr  1rem;
+        grid-template-columns: 0% 2fr 2fr  0%;
       }
       .menu-nav .logo{
         margin-bottom: 5px;
@@ -118,7 +119,7 @@
 }
 @media  screen and (max-width:300px) {
     .menu-nav{
-        grid-template-columns: 1rem 3fr 2fr 1rem;
+        grid-template-columns: 0% 3fr 2fr 0%;
     }
     .menu-nav .logo{
         margin:10px -5px 0px -10px;

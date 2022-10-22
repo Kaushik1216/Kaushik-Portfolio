@@ -1,4 +1,4 @@
-/* ntmlpage */
+/* background code snipet */
 #kaushik{
     position: relative;
 }
@@ -17,6 +17,9 @@
     opacity:0.2;
     z-index:-467777777778!important;
 }
+
+/* background */
+
 #name {
     font-size: 50px;
     font-weight: bolder;

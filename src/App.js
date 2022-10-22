@@ -35,7 +35,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home themeChange={themeChange} font={font} text={text}/>}></Route>
           <Route path="/about" element={<About />}></Route>
-          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/contact" element={<Contact  themeChange={themeChange} font={font} text={text} />}></Route>
           <Route path="/skills" element={<Skill />}></Route>
           <Route path="/projects" element={<Project />}></Route>
         </Routes>
