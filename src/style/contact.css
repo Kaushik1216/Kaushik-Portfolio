@@ -2,7 +2,22 @@
     margin-top:20px;
 }
 
-
+.social{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.rightrow{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.rightrowup{
+    margin-top: 60px;
+}
+.rightrowdown{
+    margin-bottom: 100px;
+}
 .form-container input{
    border:none;
 }

@@ -1,6 +1,6 @@
 import React from "react";
 import "../style/home.css";
-import { Instagram ,Facebook,Github,Linkdin,Instagraml,Facebookl,Githubl,Linkdinl} from "../datas/socialicon";
+import { Twitter ,Facebook,Github,Linkdin,Twitterl,Facebookl,Githubl,Linkdinl} from "../datas/socialicon";
 import me from "./images/profile-img.png";
 import hand from "./images/hi.gif"
 import { useState } from "react";
@@ -104,7 +104,7 @@ export default function Home(props) {
                      initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
                      transition={{type:'spring', duration:1, delay:1}}
-                     ><a rel="noreferrer" target="_blank" href="https://www.instagram.com/kaushik_1090/"><Instagram></Instagram></a></motion.div>
+                     ><a rel="noreferrer" target="_blank" href="https://twitter.com/Undefinekaushik"><Twitter></Twitter></a></motion.div>
                    </div>
                   <div className="row socialIcon text-start" style={{display:`${props.text==='#fff'?'':'none'}`}}>
                     <motion.div className="col-1"
@@ -127,7 +127,7 @@ export default function Home(props) {
                      initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
                      transition={{type:'spring', duration:1, delay:1}}
-                     ><a rel="noreferrer" target="_blank" href="https://www.instagram.com/kaushik_1090/"><Instagraml></Instagraml></a></motion.div>
+                     ><a rel="noreferrer" target="_blank" href="https://twitter.com/Undefinekaushik"><Twitterl></Twitterl></a></motion.div>
                    </div>
                 </motion.div>
 
