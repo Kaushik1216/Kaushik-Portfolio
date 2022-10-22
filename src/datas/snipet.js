@@ -19,6 +19,6 @@ export const html={
     "second":`const mongoose = require("mongoose");`,
     "middleone":"res.render(\"",
     "middlelast":"\")",
-    "lastsecond":`const conn = await mongoose.connect(process.env.MONGO_DATABASE_URI);`,
-    "lastline":`console.log([STATUS] Connected to Database:{conn.connection.name}")`
+    "lastsecond":`mongoose.connect("With Kaushik");`,
+    "lastline":`console.log(Connected to Kaushik")`
   }

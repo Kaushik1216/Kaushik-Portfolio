@@ -7,7 +7,6 @@
     top:0px;
     left:10px;
     opacity:0.3;
-    z-index:-467777777778!important;
     font-family: 'Fasthand', cursive;
 }
 .codedown{
@@ -39,8 +38,9 @@
 
 .main_header #kaushik {
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
+    margin-left: -8px;
 
 }
 
@@ -63,9 +63,9 @@
 }
 
 .main_header #kaushik {
-    display: flex;
+    /* display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-start; */
 }
 
 @media screen and (max-width:780px) {
@@ -73,17 +73,19 @@
         justify-content: center;
     }
 
-    #kaushik {
+    /* #kaushik {
         justify-content: center;
         display: none;
-    }
+    } */
 }
 
 @media screen and (max-width:767px) {
     .main_header #kaushik {
-        margin-top: 100px;
+        margin-top: 30px;
         margin-bottom: 50px;
+        height: 50vh;
         text-align: center;
+        margin-left: 0px;
     }
 
     .main_header #img {
@@ -99,5 +101,21 @@
         display: flex;
         justify-content: space-around;
         justify-items: center;
+    }
+    .codeup{
+        margin-bottom: 100px;
+    }
+    #break{
+        display: none;
+    }
+}
+@media screen and (max-width:470px) {
+    .main_header #kaushik{
+        margin-left: 30px;
+    }
+}
+@media screen and (min-width:413px) and (max-width:415px) {
+    .main_header #kaushik{
+        margin-left: 25px;
     }
 }
