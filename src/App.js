@@ -19,6 +19,7 @@ function App() {
       setFont("sun");
       setText("#fff");
       // document.body.style.background="#002147";
+      // document.body.style.background="#111827";
       document.body.style.background="#0A192F";
       // document.body.style.background="#000033";
       // document.body.style.background="#29272A";
@@ -36,7 +37,7 @@ function App() {
           <Route path="/" element={<Home themeChange={themeChange} font={font} text={text}/>}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/contact" element={<Contact  themeChange={themeChange} font={font} text={text} />}></Route>
-          <Route path="/skills" element={<Skill />}></Route>
+          <Route path="/skills" element={<Skill themeChange={themeChange} font={font} text={text}/>}></Route>
           <Route path="/projects" element={<Project />}></Route>
         </Routes>
         <Downbar />

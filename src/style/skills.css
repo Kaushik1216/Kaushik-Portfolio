@@ -2,6 +2,9 @@
     font-size: 60px;
     font-weight:bolder;
 }
+.second{
+    margin-bottom: 40px;
+}
 .code{
     /* background-color: bisque; */
     padding-top: 10px;
@@ -16,12 +19,9 @@
     flex-direction: row;
     margin-top: 10px;
     margin-bottom: 10px;
+    position: relative;
 }
-.star{
-    margin-left: 10px;
-    margin-right: 10px;
 
-}
 .starline{
     width: 85%;
     height: 60%;
@@ -33,6 +33,16 @@
 
     /* background-color:#5E84E8; */
     /* background-color:#09EECC; */
+}
+.star{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+
+}
+.secstar{
+    position: absolute;
+    right: 0px;
 }
 @media  screen and (max-width:600px) {
     .pageinfo{
