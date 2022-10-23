@@ -20,5 +20,5 @@ export const html={
     "middleone":"res.render(\"",
     "middlelast":"\")",
     "lastsecond":`mongoose.connect("With Kaushik");`,
-    "lastline":`console.log(Connected to Kaushik")`
+    "lastline":`console.log("Connected to Kaushik")`
   }

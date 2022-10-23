@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/home.css";
 import { Twitter ,Facebook,Github,Linkdin,Twitterl,Facebookl,Githubl,Linkdinl} from "../datas/socialicon";
-import me from "./images/profile-img.png";
+import me from "./images/myphoto2circle.png";
 import {html,coder,fulls} from "../datas/snipet"
 import hand from "./images/hi.gif"
 import { useState } from "react";
@@ -113,7 +113,7 @@ export default function Home(props) {
               </div>
               <div className="col-md-6 col-12" id="imgdiv">
                 <div id="img">
-                  <img src={me} alt="kaushi" style={{height:"500px"}}/>
+                  <img src={me} alt="kaushi" style={{}}/>
                 </div>
               </div>
             </div>
