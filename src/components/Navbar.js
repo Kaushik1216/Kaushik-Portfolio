@@ -15,7 +15,7 @@ export default function Navbar(props) {
       navigate("/skills")
   }
   const project= () => {
-      navigate("/project")
+      navigate("/projects")
   }
   const contact = () => {
       navigate("/contact")

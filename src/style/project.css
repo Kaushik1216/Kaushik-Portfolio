@@ -1,0 +1,51 @@
+.projectcard{
+    height: 100%;
+    border:2px solid black;
+    padding: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-left: 20px;
+margin-top: 20px;
+}
+.projectrow{
+    padding-right: 10px;
+    width: 97.5%;
+    padding-bottom: 20px;
+}
+.form-btn{
+    width:25%;
+    /* margin-top: 35px; */
+    height: 40px;
+    background-color: aquamarine;
+  }
+.pname{
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.pinfo{
+    font-size: 20px;
+}
+.pmade{
+    font-size: 20px;
+}
+
+.wrapper{
+    max-height: 120px;
+    border: 1px solid #ddd;
+    display: flex;
+    overflow-x:auto;
+}
+.wrapper::-webkit-scrollbar{
+    width:0;
+}
+.wrapper .item{
+    min-width:150px;
+    height: 110px;
+    line-height: 110px;
+    text-align: center;
+    background-color: #ddd;
+    margin-right: 2px;
+}
