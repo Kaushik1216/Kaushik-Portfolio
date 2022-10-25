@@ -10,31 +10,31 @@ export default function Project() {
         <div className="row projectrow">
           <h4 className="projectinfo">Self Projects</h4>
         <div className="wrapper">
-          <div className="item">
+          <div className="item  projectcard">
             <h4 className="pname">My Portfolio</h4>
             <p className="pinfo">This is my personal website made by me</p>
             <p className="pmade">React JS,Framer-Motion,Html,Css,JS</p>
             <button type="Submit" className='form-btn'>View code</button>
           </div>
-          <div className="item">
+          <div className="item projectcard">
             <h4 className="pname">My Portfolio</h4>
             <p className="pinfo">This is my personal website made by me</p>
             <p className="pmade">React JS,Framer-Motion,Html,Css,JS</p>
             <button type="Submit" className='form-btn'>View code</button>
           </div>
-          <div className="item">
+          <div className="item projectcard">
             <h4 className="pname">My Portfolio</h4>
             <p className="pinfo">This is my personal website made by me</p>
             <p className="pmade">React JS,Framer-Motion,Html,Css,JS</p>
             <button type="Submit" className='form-btn'>View code</button>
           </div>
-          <div className="item">
+          <div className="item projectcard">
             <h4 className="pname">My Portfolio</h4>
             <p className="pinfo">This is my personal website made by me</p>
             <p className="pmade">React JS,Framer-Motion,Html,Css,JS</p>
             <button type="Submit" className='form-btn'>View code</button>
           </div>
-          <div className="item">
+          <div className="item projectcard">
             <h4 className="pname">My Portfolio</h4>
             <p className="pinfo">This is my personal website made by me</p>
             <p className="pmade">React JS,Framer-Motion,Html,Css,JS</p>
