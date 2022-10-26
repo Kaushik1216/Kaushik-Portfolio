@@ -63,7 +63,7 @@ export default function Downbar() {
           </div>
           <div className="col">
         <div className="row"><i className="fa-solid fa-heart"style={{color:"#fff"}}></i></div> 
-          <div className="row"> <Link to="/project">Project</Link></div>
+          <div className="row"> <Link to="/projects">Project</Link></div>
         </div>
         <div className="col">
         <div className="row"><i className="fa-solid fa-info"style={{color:"#fff"}}></i></div> 

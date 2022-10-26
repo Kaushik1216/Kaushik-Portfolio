@@ -58,9 +58,9 @@ const item3 = {
     opacity: 1
   }
 };
-function map(){
-  window.location.replace("https://www.google.com/maps/d/u/0/viewer?msa=0&ie=UTF8&t=h&source=embed&vpsrc=0&z=12&mid=1QdUiFNGmF3zr_84PrAJFTcpQaAw&ll=18.930320128560858%2C72.83583616882323")
-}
+// function map(){
+//   window.location.replace("https://www.google.com/maps/d/u/0/viewer?msa=0&ie=UTF8&t=h&source=embed&vpsrc=0&z=12&mid=1QdUiFNGmF3zr_84PrAJFTcpQaAw&ll=18.930320128560858%2C72.83583616882323")
+// }
   return (
     <>
     <div className="container-fluid mx-auto">
@@ -116,7 +116,7 @@ function map(){
           <div className="col-md-5 col-12 rightrow">
             <div className="row rightrowup">
                <h5>Kaushik Vishwarkarma</h5>
-               <h6><span>Residance:</span>&nbsp;<a href='https://www.google.com/maps/d/u/0/viewer?msa=0&ie=UTF8&t=h&source=embed&vpsrc=0&z=12&mid=1QdUiFNGmF3zr_84PrAJFTcpQaAw&ll=18.930320128560858%2C72.83583616882323' target="_blank"><i class="fa-sharp fa-solid fa-location-dot " style={{color:"red"}}></i></a>Mumbai,India</h6>
+               <h6><span>Residance:</span>&nbsp;<a  rel="noreferrer" href='https://www.google.com/maps/d/u/0/viewer?msa=0&ie=UTF8&t=h&source=embed&vpsrc=0&z=12&mid=1QdUiFNGmF3zr_84PrAJFTcpQaAw&ll=18.930320128560858%2C72.83583616882323' target="_blank"><i class="fa-sharp fa-solid fa-location-dot " style={{color:"red"}}></i></a>Mumbai,India</h6>
                <h6><span>Open Source:</span>&nbsp;Always</h6>
                <h6><span>Freelance:</span>&nbsp;Available</h6>
                <h6 ><span class="email">E-MAIL:</span>&nbsp;kaushik.vishwakarma2003@gmail.com</h6>
