@@ -2,7 +2,6 @@ import React from 'react'
 import '../style/navbar.css'
 import { useNavigate} from 'react-router-dom';
 export default function Navbar(props) {
-  console.log(`${props.text}`);
   const navigate = useNavigate();
   
   const homePage = () => {

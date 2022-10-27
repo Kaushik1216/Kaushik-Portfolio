@@ -69,7 +69,7 @@
     flex: auto;
     flex-shrink: 0;
     min-width: 300px;
-    max-width: 400px;
+    max-width: 300px;
     width: 300px;
 }
 .projectcard hr{
