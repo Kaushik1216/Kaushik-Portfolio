@@ -11,7 +11,7 @@ export default function projectcard(props) {
     <p className="pinfo">{props.e.projectInfo}</p>
     <hr />
     <p className="pmade">{props.e.madewith}</p>
-    <NavLink to={{pathname:`${props.e.viewcode}`}} target="_blank"><button className='form-btn'>View code</button></NavLink>
+    <NavLink to={{pathname:`${props.e.viewcode}`}} rel="noreferrer" target="_blank"><button className='form-btn'>View code</button></NavLink>
   </div>
   )
 }
