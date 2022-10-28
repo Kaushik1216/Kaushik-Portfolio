@@ -41,5 +41,6 @@
       "viewcode":"https://github.com/Kaushik1216/Kaushik-Portfolio"
     },
   ]
-
+  export const urllist=["https://api.github.com/repos/Ashutosh09-crypto/Rann-Neeti22/contributors","https://api.github.com/repos/SnTC-IITMandi/Gymkhana-IITMandi/contributors","https://api.github.com/repos/SnTC-IITMandi/ControlPortal/contributors","https://api.github.com/repos/STAC-IITMandi/astrax.in/contributors"]
+  export const reponame=["Rann-neeti'22","Gymkhana-IITMandi","IITMandi control-portal","Stac-iitmandi Astrax'22"]
   
