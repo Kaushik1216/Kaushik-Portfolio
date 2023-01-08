@@ -20,7 +20,7 @@
 /* background */
 
 #name {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bolder;
 }
 #devinfo {
@@ -63,9 +63,7 @@
 }
 
 #imgdiv #img img{
-    /* height: 60%; */
-    border-radius: 100%;
-    border: 4px solid #AADCEC;
+    margin-bottom: 30px;
 }
 
 
@@ -115,5 +113,9 @@
     #imgdiv #img img{
         margin-left: -50px;
         margin-top: -30px;
+        /* width: 80%; */
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }

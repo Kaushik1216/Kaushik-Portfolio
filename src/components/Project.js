@@ -4,8 +4,9 @@ import { selfProject,contr,urllist,reponame } from "../datas/projectdata";
 import Projectcard from "./subcomponent/projectcard";
 import { useState } from "react";
 import { useEffect } from "react";
-export default function Project() {
-  const [commits,setCommits]=useState({});
+export default function Project(props) {
+  // const [commits,setCommits]=useState({});
+  const [contrdetail,setcontrdetail]=useState(contr);
 var j=0;
     const fun =async(url)=>{
     try {
@@ -15,10 +16,10 @@ var j=0;
       const data = await response.json();
             for(var i=0;i<data.length;i++){
                if(data[i].login==="Kaushik1216"){
-                const temp={"Rank":i+1,"Commits":data[i].contributions}
+                const temp={"Rank":i,"Commits":data[i].contributions}
                 d[reponame[j]]=temp;
                 j++;
-                setCommits(d)
+                setcontrdetail({...contr,c})
                }
             }
     } catch (error) {
@@ -36,7 +37,7 @@ var j=0;
     <>
       <div>
         <div className="row">
-          <p className="pageinfo">Projects</p>
+          <p className="pageinfo" style={{color:`${props.headcolor}`}}>Projects</p>
         </div>
         <div className="row projectrow">
           <p className="projectinfo">Self Projects &nbsp;({selfProject.length})</p>

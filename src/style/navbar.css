@@ -3,7 +3,7 @@
     grid-template-columns: 0% 2fr 1fr 0.3fr 0%;
     font-size: larger;
     width: 100%;
-    height: 70px;
+    height: 80px;
 }
 .logo{
     display: grid;
@@ -32,6 +32,10 @@
     align-items: center;
     justify-content: center;
     transition-duration: 1s;
+}
+.menu-nav .logo img{
+    width: 40px;
+
 }
 .checkbox{
     display: none;
@@ -68,6 +72,13 @@
     .menu-nav .logo{
         padding-left: 30px;
     }
+    .menu-nav .logo img{
+        width: 30px;
+    
+    }
+    .menu-nav{
+        margin-bottom: 20px;
+    }
 }
 
 
@@ -98,6 +109,14 @@
         margin-right:50px;
         margin-left:-27.5px;
     }
+}
+@media  screen and (max-width:600px) {
+
+    .menu-nav .logo img{
+        width: 40px;
+    
+    }
+
 }
 @media screen and (max-width:400px) {
     .menu-nav {

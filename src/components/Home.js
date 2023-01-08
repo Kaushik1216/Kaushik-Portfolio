@@ -1,7 +1,7 @@
 import React from "react";
 import "../style/home.css";
 import { Twitter ,Facebook,Github,Linkdin,Twitterl,Facebookl,Githubl,Linkdinl} from "../datas/socialicon";
-import me from "./images/myphoto2circle.png";
+import me from "./images/me1.png";
 import {html,coder,fulls} from "../datas/snipet"
 import hand from "./images/hi.gif"
 import { useState } from "react";
@@ -57,11 +57,11 @@ export default function Home(props) {
                     <p id="title">Hi<sup><img src={hand} style={{height:"40px"}}/></sup>I'm</p></motion.h5>
 
                   <h1 id="name"> Kaushik Vishwakarma</h1>
-                  <h3 id="devinfo"style={{color:`${props.text==="#000"?"#0A192F":"#ECECEC"}`,textShadow:`2px 1px 1px ${props.text==="#fff"?"#fff":"#000"}`}}><span onMouseEnter={()=>{codechange("Coder")}}>CODER</span>&nbsp;+&nbsp;<span onMouseEnter={()=>{codechange("fulls")}}>FULL STACK DEVELOPER</span></h3>
-                  <h6>
+                  <h3 id="devinfo"style={{color:`${props.headcolor}`}}><span onMouseEnter={()=>{codechange("Coder")}}>CODER</span>&nbsp;+&nbsp;<span onMouseEnter={()=>{codechange("fulls")}}>FULL STACK DEVELOPER</span></h3>
+                  {/* <h6> 
                     A Enthusiastiac newbie in tech who everyday try to learn new tech stuf
-                  </h6>
-                  <div className="row socialIcon text-start" style={{display:`${props.text==='#000'?'':'none'}`}}>
+                  </h6> */}
+                  <div className="row socialIcon text-start" style={{display:`${props.text==='#383838'?'':'none'}`}}>
                     <motion.div className="col-1"
                      initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
@@ -84,7 +84,7 @@ export default function Home(props) {
                      transition={{type:'spring', duration:1, delay:1}}
                      ><a rel="noreferrer" target="_blank" href="https://twitter.com/Undefinekaushik"><Twitter></Twitter></a></motion.div>
                    </div>
-                  <div className="row socialIcon text-start" style={{display:`${props.text==='#fff'?'':'none'}`}}>
+                  <div className="row socialIcon text-start" style={{display:`${props.text==='#F8F8F8'?'':'none'}`}}>
                     <motion.div className="col-1"
                      initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}

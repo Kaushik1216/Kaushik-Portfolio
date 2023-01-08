@@ -20,6 +20,7 @@
     margin-left: -23px;
     font-size: 18px;
     font-weight: 500;
+    /* margin-top: 1000px; */
 }
 
 .projectrow {
@@ -40,7 +41,6 @@
     position: absolute;
     bottom: 10px;
 }
-
 .pname {
     font-size: 25px;
     /* margin-bottom: 20px; */
@@ -68,9 +68,9 @@
     margin-right: 2px;
     flex: auto;
     flex-shrink: 0;
-    min-width: 300px;
-    max-width: 300px;
-    width: 300px;
+    min-width: 320px;
+    max-width: 320px;
+    width: 320px;
 }
 .projectcard hr{
     background-color: black;

@@ -72,11 +72,11 @@ const item3 = {
           
           <div className="col-md-6 col-12">
           <div className="text">
-         <p className="pageinfo">Contact</p>
-         <h6>Do you speak Hindi? It's ok if you don't, I speak English too.
+         <p className="pageinfo" style={{marginTop:"-13px",color:`${props.headcolor}`}}>Contact</p>
+         <h6 className='mt-100' style={{marginLeft:"4px"}}>Do you speak Hindi? It's ok if you don't, I speak English too.
          </h6>
       </div>
-            <form ref={form} onSubmit={sendmail} id="form">
+            <form ref={form} onSubmit={sendmail} id="form" style={{marginTop:"-15px"}}>
               <div className="container-fluid">
               <div className="row">
                 <div className="col-md-6 col-12">
@@ -124,7 +124,7 @@ const item3 = {
             <div className="row rightrowdown">
               <div className="h5">
               Feeling social? Find me on these online spaces too!
-              <div className="row mt-4 "style={{display:`${props.text==='#000'?'':'none'}`}}>
+              <div className="row mt-4 "style={{display:`${props.text==='#383838'?'':'none'}`}}>
                 <div className="col-6  social" > <motion.div className="container"variants={container}initial="hidden"animate="visible">
     <motion.div className="social" variants={item}  initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
@@ -136,7 +136,7 @@ const item3 = {
                      transition={{type:'spring', duration:1, delay:0.5}}><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kaushik-vishwakarma-103b20223/"><Linkdin2></Linkdin2></a></motion.div>
      </motion.div></div>
               </div>
-              <div className="row mt-4" style={{display:`${props.text==='#000'?'':'none'}`}}>
+              <div className="row mt-4" style={{display:`${props.text==='#383838'?'':'none'}`}}>
                 <div className="col-6 social"> <motion.div className="container"variants={container}initial="hidden"animate="visible">
               <motion.div className="social" varients={item2}  initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
@@ -151,7 +151,7 @@ const item3 = {
                      transition={{type:'spring', duration:1, delay:1}}><a rel="noreferrer" target="_blank" href="https://twitter.com/Undefinekaushik"><Twitter2></Twitter2></a></motion.div>
      </motion.div></div>
               </div>
-              <div className="row mt-4 "style={{display:`${props.text==='#fff'?'':'none'}`}}>
+              <div className="row mt-4 "style={{display:`${props.text==='#F8F8F8'?'':'none'}`}}>
                 <div className="col-6  social" > <motion.div className="container"variants={container}initial="hidden"animate="visible">
     <motion.div className="social" variants={item}  initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
@@ -163,7 +163,7 @@ const item3 = {
                      transition={{type:'spring', duration:1, delay:0.5}}><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kaushik-vishwakarma-103b20223/"><Linkdin2l></Linkdin2l></a></motion.div>
      </motion.div></div>
               </div>
-              <div className="row mt-4" style={{display:`${props.text==='#fff'?'':'none'}`}}>
+              <div className="row mt-4" style={{display:`${props.text==='#F8F8F8'?'':'none'}`}}>
                 <div className="col-6 social"> <motion.div className="container"variants={container}initial="hidden"animate="visible">
               <motion.div className="social" varients={item2}  initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
