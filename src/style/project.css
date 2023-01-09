@@ -5,16 +5,48 @@
     min-height: 270px;
     display: flex;
     flex-direction: column;
+    /* justify-content: flex-end; */
+     width: 320px;
+    /* align-items: center; */
     border-radius: 15px;
-    margin-left: 20px;
+    margin-left: 40px;
     margin-top: 20px;
-    box-sizing: border-box;
+    box-sizing: border-box; 
     position: relative;
 }
-
-.projectcard:first-child {
-    margin-left: -10px;
+.pageinfo .head{
+    font-size: 35px;
+    font-weight: 600;
+    text-decoration: underline;
+    /* border: 2px solid black; */
 }
+.prow{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: -20px;
+    width: 96%;
+    height: 600px;
+    overflow-y: auto;
+    padding-top: 100px;
+    scrollbar-width: 0px;
+}
+.prow::-webkit-scrollbar {
+    display: none;
+  }
+.pageinfo{
+  font-size: 40px;
+ position: sticky;
+}
+.onemore{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+/* .projectcard:first-child {
+    margin-left: -10px;
+} */
 
 .projectinfo {
     margin-left: -23px;
@@ -24,7 +56,8 @@
 }
 
 .projectrow {
-    width: 94.5%;
+    /* width: 94.5%; */
+    width: 94%;
     padding-bottom: 20px;
     display: flex;
     flex-direction: row;
@@ -33,7 +66,7 @@
     margin-left: 5px;
 }
 
-.wrapper .form-btn {
+ .form-btn {
     width: 100px;
     margin-top: 10px;
     height: 40px;
@@ -57,21 +90,24 @@
     position: absolute;
     top:200px;}
 
-.wrapper {
+/* .wrapper {
     display: flex;
-    overflow-x: auto;
-    flex: 1;
-    flex-wrap: nowrap;
-}
+    overflow-y: auto;
+    flex-direction: row;
+    justify-content: center;
 
-.wrapper .item {
-    margin-right: 2px;
-    flex: auto;
-    flex-shrink: 0;
-    min-width: 320px;
+    flex: 2;
+    flex-wrap:unset;
+} */
+
+/* .wrapper .item {
+    margin-right: 2px; */
+    /* flex: auto;
+    flex-shrink: 0; */
+    /* min-width: 320px;
     max-width: 320px;
     width: 320px;
-}
+} */
 .projectcard hr{
     background-color: black;
     border:1px solid black;

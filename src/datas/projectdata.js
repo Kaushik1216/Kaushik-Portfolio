@@ -42,12 +42,19 @@
     { "project":"contr",
     "projectCount":1,
       "projectName":"Rann-neeti'22",
-      "projectInfo":"Web for IIT Mandi intercollege sports meet 2022",
+      "projectInfo":"Website for IIT Mandi intercollege sports meet 2022",
       "madewith":"Preloader,Profile page,Payment page,Flash Message",
       "viewcode":"https://github.com/Kaushik1216/Rann-Neeti22",
-      "totalcommits":0,
-      "rank":0
+       "commit":0
     },
+    { "project":"contr",
+    "projectCount":2,
+      "projectName":"Gymkhana-IITMandi",
+      "projectInfo":"A website for IIT MANDI GYMKHANA",
+      "madewith":"Frontend of news page ,complete backend of website",
+      "viewcode":"https://github.com/Kaushik1216/Rann-Neeti22",
+      "commit":0
+        },
   ]
   export const urllist=["https://api.github.com/repos/Ashutosh09-crypto/Rann-Neeti22/contributors","https://api.github.com/repos/SnTC-IITMandi/Gymkhana-IITMandi/contributors","https://api.github.com/repos/SnTC-IITMandi/ControlPortal/contributors","https://api.github.com/repos/STAC-IITMandi/astrax.in/contributors"]
   export const reponame=["Rann-neeti'22","Gymkhana-IITMandi","IITMandi control-portal","Stac-iitmandi Astrax'22"]
