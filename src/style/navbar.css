@@ -56,19 +56,15 @@
     font-weight: 500;
     transition-duration: 1s;
 }
-.menu-link ul >li:hover{
- 
-    background: linear-gradient(
-        to right, #f32170, #ff6b08,
-         #cf23cf, #eedd44);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    text-decoration: underline wavy red;
-}
+
 .socialIcon .col-1{
     margin-right: 20px;
 }
-
+ul:hover li:not(:hover) {
+    color: white;
+    opacity: 0.5;
+    filter: blur(1px);
+  }
 @media  screen and (max-width:750px) {
     .menu-nav .logo{
         padding-left: 30px;
@@ -100,7 +96,7 @@
         padding-top: 5px;
         align-items:center ;
     }
-      .menu-link ul >li{
+    .menu-link ul >li{
       display: none;
     }
     .menu-nav .theme{

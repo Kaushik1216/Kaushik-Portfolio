@@ -106,7 +106,7 @@ const item3 = {
               </div>
               <div className="row mt-2 pd-2 button" >
                 <div className="col button2" >
-                <button type="Submit" className=' form-btn'>Send</button>
+                <button type="Submit" className=' form-btn-contact'>Send</button>
                 </div>
                 </div>    
                 </div>                                                                                      

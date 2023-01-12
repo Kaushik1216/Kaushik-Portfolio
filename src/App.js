@@ -18,6 +18,7 @@ function App() {
   const [headcolor,setheadcolor]=useState("#6D83F2");
   const [kaushik,setkaushik]=useState(faviiconlight);
   const favicon = document.getElementById("favicon");
+ 
   const themeChange = () => {
     if (mode === "light") {
       setMode("dark");

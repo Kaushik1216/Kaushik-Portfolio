@@ -66,7 +66,7 @@
     border: none;
     border-radius: 5px;
 }
-.form-container .form-btn{
+.form-container .form-btn-contact{
   width:25%;
   margin-top: 35px;
   height: 40px;
@@ -97,4 +97,19 @@
    .email{
     display: block;
 }
+}
+
+
+.button .button2 .form-btn-contact::after{
+    height: 100%;
+    left: -35%;
+    top:0;
+    transform:skew(50deg);
+    transition-duration: 0.6s;
+    transform-origin: top left;
+    width: 0;
+}
+.button .button2 .form-btn-contact:after{
+    height: 100%;
+    width: 135%;
 }

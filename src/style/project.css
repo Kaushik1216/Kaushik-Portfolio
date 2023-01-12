@@ -17,8 +17,12 @@
 .pageinfo .head{
     font-size: 35px;
     font-weight: 600;
-    text-decoration: underline;
+    /* text-decoration: underline; */
     /* border: 2px solid black; */
+}
+.pageinfo .rowhead{
+    padding: 5px;
+    border-radius: 3px;
 }
 .prow{
     display: flex;
