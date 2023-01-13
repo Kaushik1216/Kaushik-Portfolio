@@ -3,15 +3,17 @@ import "../style/project.css";
 import { selfProject,contr,urllist,reponame } from "../datas/projectdata";
 import Projectcard from "./subcomponent/Projectcard";
 import { useState } from "react";
-export default function Project(props) {
+import { useSelector } from "react-redux";
+export default function Project() {
+  const themecolor = useSelector((state)=>state.changeThetheme);
   const [current,setcurrent]=useState("selfproject");
-  const [hcolor,sethcolor]=useState(props.headcolor);
-  const[textcolor,settextcolor]=useState(props.textcolor);
+  const [hcolor,sethcolor]=useState(themecolor.headcolor);
+  const[textcolor,settextcolor]=useState(themecolor.textcolor);
   function change(s){
     setcurrent(s);
   }
   const cstyle={
-    border:`1px solid ${props.headcolor}`
+    border:`1px solid ${themecolor.headcolor}`
   }
   return (
     <>
@@ -20,10 +22,10 @@ export default function Project(props) {
           <p className="pageinfo" >
             <div className="row">
               <div className="col-6 text-center head" >
-               <span className="rowhead" onClick={()=>{change("selfproject")}} style={{color:current==="selfproject"?`${props.headcolor}`:`${props.text}`}}> My Projects 
+               <span className="rowhead" onClick={()=>{change("selfproject")}} style={{color:current==="selfproject"?`${themecolor.headcolor}`:`${themecolor.textcolor}`}}> My Projects 
                 </span>
               </div>
-              <div className="col-6 text-center head" onClick={()=>{change("contrproject")}} style={{color:current==="contrproject"?`${props.headcolor}`:`${props.text}`}}>Conributions Projects
+              <div className="col-6 text-center head" onClick={()=>{change("contrproject")}} style={{color:current==="contrproject"?`${themecolor.headcolor}`:`${themecolor.textcolor}`}}>Conributions Projects
                 </div>
             </div>
           </p>
@@ -31,7 +33,7 @@ export default function Project(props) {
         <div className="row prow" style={{display:current==="selfproject"?"":"none"}}>
           <div className="col-12">
 
-          <div className="row " style={{color:`${props.text}`}}>
+          <div className="row " style={{color:`${themecolor.textcolor}`}}>
          
             {selfProject.map((element) => {
               return <Projectcard e={element} key={element.projectCount} view={element.viewcode} />;
@@ -44,7 +46,7 @@ export default function Project(props) {
         <div className="row prow" style={{display:current==="contrproject"?"":"none"}}>
           <div className="col-12">
 
-          <div className="row "  style={{color:`${props.text}`}}>
+          <div className="row "  style={{color:`${themecolor.textcolor}`}}>
             {contr.map((element) => {
               return <Projectcard e={element} key={element.projectCount} view={element.viewcode} headcolor={hcolor} text={textcolor} cstyle={cstyle}/>;
             })}

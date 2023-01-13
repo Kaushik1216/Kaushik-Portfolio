@@ -6,14 +6,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .second{
     margin-bottom: 40px;
 }
-.skills-box{
-    padding:2px;
-    /* height: 50px; */
-}
+
 .skills-box .skilldata{
     /* background-color: aqua; */
     width: 100%;
@@ -23,6 +21,12 @@
     align-items: center;
     text-align: center;
     padding: 15px;
+    margin: 5px;
+    transition: width 1.3s ease-out;
+    transition-duration: 1.3s;
+    transition-timing-function: ease-out;
+    transition-delay: 0s;
+    transition-property: width;
     
 }
 .code{
@@ -32,7 +36,6 @@
     margin-left: 15px;
     width: 93%;
     border-radius: 20px;
-    border: 2px solid black;
 }
 .alignsub{
     display: flex;

@@ -4,8 +4,10 @@ import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import {motion} from "framer-motion";
 import { Twitter2 ,Facebook2,Linkdin2,Instagram2,Twitter2l,Facebook2l,Instagram2l,Linkdin2l} from "../datas/socialicon";
+import { useSelector } from 'react-redux';
+export default function Contact() {
+  const themecolor = useSelector((state)=>state.changeThetheme);
 
-export default function Contact(props) {
   const form=useRef()
    const sendmail =(e)=>{
     e.preventDefault();
@@ -67,12 +69,12 @@ const item3 = {
     <div className="first">
       
      
-      <div className="form-container"  style={{color:`${props.text}`}}>
+      <div className="form-container"  style={{color:`${themecolor.textcolor}`}}>
         <div className="row mx-auto">
           
           <div className="col-md-6 col-12">
           <div className="text">
-         <p className="pageinfo" style={{marginTop:"-13px",color:`${props.headcolor}`}}>Contact</p>
+         <p className="pageinfo" style={{marginTop:"-13px",color:`${themecolor.headcolor}`}}>Contact</p>
          <h6 className='mt-100' style={{marginLeft:"4px"}}>Do you speak Hindi? It's ok if you don't, I speak English too.
          </h6>
       </div>
@@ -124,7 +126,7 @@ const item3 = {
             <div className="row rightrowdown">
               <div className="h5">
               Feeling social? Find me on these online spaces too!
-              <div className="row mt-4 "style={{display:`${props.text==='#383838'?'':'none'}`}}>
+              <div className="row mt-4 "style={{display:`${themecolor.textcolor==='#191919'?'':'none'}`}}>
                 <div className="col-6  social" > <motion.div className="container"variants={container}initial="hidden"animate="visible">
     <motion.div className="social" variants={item}  initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
@@ -136,7 +138,7 @@ const item3 = {
                      transition={{type:'spring', duration:1, delay:0.5}}><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kaushik-vishwakarma-103b20223/"><Linkdin2></Linkdin2></a></motion.div>
      </motion.div></div>
               </div>
-              <div className="row mt-4" style={{display:`${props.text==='#383838'?'':'none'}`}}>
+              <div className="row mt-4" style={{display:`${themecolor.textcolor==='#191919'?'':'none'}`}}>
                 <div className="col-6 social"> <motion.div className="container"variants={container}initial="hidden"animate="visible">
               <motion.div className="social" varients={item2}  initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
@@ -151,7 +153,7 @@ const item3 = {
                      transition={{type:'spring', duration:1, delay:1}}><a rel="noreferrer" target="_blank" href="https://twitter.com/Undefinekaushik"><Twitter2></Twitter2></a></motion.div>
      </motion.div></div>
               </div>
-              <div className="row mt-4 "style={{display:`${props.text==='#F8F8F8'?'':'none'}`}}>
+              <div className="row mt-4 "style={{display:`${themecolor.textcolor==='#F8F8F8'?'':'none'}`}}>
                 <div className="col-6  social" > <motion.div className="container"variants={container}initial="hidden"animate="visible">
     <motion.div className="social" variants={item}  initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}
@@ -163,7 +165,7 @@ const item3 = {
                      transition={{type:'spring', duration:1, delay:0.5}}><a rel="noreferrer" target="_blank" href="https://www.linkedin.com/in/kaushik-vishwakarma-103b20223/"><Linkdin2l></Linkdin2l></a></motion.div>
      </motion.div></div>
               </div>
-              <div className="row mt-4" style={{display:`${props.text==='#F8F8F8'?'':'none'}`}}>
+              <div className="row mt-4" style={{display:`${themecolor.textcolor==='#F8F8F8'?'':'none'}`}}>
                 <div className="col-6 social"> <motion.div className="container"variants={container}initial="hidden"animate="visible">
               <motion.div className="social" varients={item2}  initial={{transform:"scale(0)"}}
                      animate={{scale:[0,1,1.5,1]}}

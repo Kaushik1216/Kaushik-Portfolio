@@ -2,8 +2,10 @@ import React from "react";
 import "../../style/project.css";
 // import { NavLink } from 'react-router-dom';
 // import { useEffect} from 'react';
+import { useSelector } from "react-redux";
 import { useState } from "react";
 export default function Projectcard(props) {
+  const themecolor = useSelector((state)=>state.changeThetheme);
   const [commit, setcommit] = useState(0);
   const [rank, setrank] = useState(0);
 
@@ -26,20 +28,20 @@ export default function Projectcard(props) {
   return (
     <>
       <div className="col-sm-6 col-md-4 onemore" style={{display:`${props.e.project==="self"?"":"none"}`}}>
-      <div className="projectcard">
+      <div className="projectcard" style={{border:`1px solid ${themecolor.headcolor}`}}>
 
     <h4 className="pname">{props.e.projectName}</h4>
     <p className="pinfo">{props.e.projectInfo}</p>
-    <hr />
+    <hr style={{border:`1px solid ${themecolor.headcolor}`}}/>
     <p className="pmade">{props.e.madewith}</p>
-    <a href={props.e.viewcode} rel="noreferrer"target="_blank"><button className='form-btn'>View code</button></a>
+    <a href={props.e.viewcode} rel="noreferrer"target="_blank" style={{color:`${themecolor.textcolor}`}}><button className='f-btn' style={{border:`2px solid ${themecolor.headcolor}`,backgroundColor:`${themecolor.background}`,color:`${themecolor.textcolor}`}}>View code</button></a>
       </div>
   </div>
       <div
         className="col-4 onemore"
         style={{ display: `${props.e.project === "contr" ? "" : "none"}` }}
       >
-        <div className=" projectcard">
+        <div className=" projectcard" style={{border:`1px solid ${themecolor.headcolor}`}}>
           <h4 className="pname">{props.e.projectName}</h4>
           <p className="pinfo">{props.e.projectInfo}</p>
           <span>
@@ -47,11 +49,9 @@ export default function Projectcard(props) {
               commits:{commit}
               &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rank:{rank}
             </p>
-          </span><hr />
+          </span><hr style={{border:`1px solid ${themecolor.headcolor}`}}/>
           <p className="pmade">{props.e.madewith}</p>
-          <a href={props.e.viewcode} rel="noreferrer" target="_blank">
-            <button className="form-btn">View code</button>
-          </a>
+          <a href={props.e.viewcode} rel="noreferrer"target="_blank" style={{color:`${themecolor.textcolor}`}}><button className='f-btn' style={{border:`2px solid ${themecolor.headcolor}`,backgroundColor:`${themecolor.background}`,color:`${themecolor.textcolor}`}}>View code</button></a>
         </div>
       </div>
     </>

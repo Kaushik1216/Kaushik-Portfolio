@@ -70,15 +70,14 @@
     margin-left: 5px;
 }
 
- .form-btn {
+.f-btn {
     width: 100px;
     margin-top: 10px;
     height: 40px;
-    background-color: aquamarine;
     position: absolute;
     bottom: 10px;
     right:20px;
-    
+    border-radius: 3px;
     
 }
 .pname {
