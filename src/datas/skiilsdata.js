@@ -1,14 +1,47 @@
-import styled from 'styled-components'
-export const PythonlDiv = styled.div`
-  background: rgb(188,203,232);
-  background: linear-gradient(90deg, rgba(188,203,232,1) 20%, rgba(119,140,187,1) 33%, rgba(94,132,232,1) 72%, rgba(236,236,236,1) 72%);`
-
-export const CpplDiv=styled.div`
-background: rgb(188,203,232);
-background: linear-gradient(90deg, rgba(188,203,232,1) 20%, rgba(119,140,187,1) 33%, rgba(94,132,232,1) 61%, rgba(236,236,236,1) 61%);`
-
-
-export const CplDiv=styled.div`
-background: rgb(188,203,232);
-background: linear-gradient(90deg, rgba(188,203,232,1) 20%, rgba(119,140,187,1) 33%, rgba(94,132,232,1) 55%, rgba(236,236,236,1) 55%);
-`
+export const skillsdata=[
+  {
+    "category":"coding",
+    "data":"Data Structure And Algorithm"
+  },
+  {
+    "category":"coding",
+    "data":"Competitive Programming"
+  },
+  {
+    "category":"coding",
+    "data":"C++"
+  },
+  {
+    "category":"coding",
+    "data":"Python"
+  },
+  {
+    "category":"webdev",
+    "data":"Html"
+  },
+  {
+    "category":"webdev",
+    "data":"Css"
+  },
+  {
+    "category":"webdev",
+    "data":"JavaScript"
+  },
+  {
+    "category":"webdev",
+    "data":"ReactJs"
+  },
+  {
+    "category":"webdev",
+    "data":"NodeJs Backend"
+  },
+  {
+    "category":"webdev",
+    "data":"PHP"
+  },
+  {
+    "category":"webdev",
+    "data":"Django"
+  },
+  
+]

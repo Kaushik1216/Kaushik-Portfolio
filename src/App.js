@@ -9,12 +9,12 @@ import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
 import faviiconlight from "./components/images/faviconlight.png"
 import faviicondark from "./components/images/favicondark.png"
+// import Projectcard from "./components/subcomponent/Projectcard";
 import About from "./components/About";
 // import favicondark from './components/images/favicondark.png'
 function App() {
   const [mode, setMode] = useState("light");
   const [text,setText]=useState("#383838");
-  const[font,setFont]=useState('sun');
   const [headcolor,setheadcolor]=useState("#6D83F2");
   const [kaushik,setkaushik]=useState(faviiconlight);
   const favicon = document.getElementById("favicon");
@@ -22,7 +22,6 @@ function App() {
   const themeChange = () => {
     if (mode === "light") {
       setMode("dark");
-      setFont("sun");
       setText("#F8F8F8");
       setheadcolor("#74FAC0")
       // document.body.style.background="#002147";
@@ -36,7 +35,6 @@ function App() {
     } else {
       setMode("light");
       setheadcolor("#6D83F2");
-      setFont("moon");
       setText("#383838");
       setkaushik(faviiconlight);
       document.body.style.background="#F8F8F8"
@@ -46,13 +44,13 @@ function App() {
   };
   return (
       <div className="App" id="app">
-        <Navbar themeChange={themeChange} kaushik={kaushik}font={font} text={text} headcolor={headcolor}/>
+        <Navbar themeChange={themeChange} kaushik={kaushik} text={text} headcolor={headcolor}/>
         <Routes>
-          <Route path="/" element={<Home themeChange={themeChange} font={font} headcolor={headcolor} text={text}/>}></Route>
-          <Route path="/about" element={<About themeChange={themeChange} font={font} headcolor={headcolor} text={text}/>}></Route>
-          <Route path="/contact" element={<Contact  themeChange={themeChange} headcolor={headcolor} font={font} text={text} />}></Route>
-          <Route path="/skills" element={<Skill themeChange={themeChange} headcolor={headcolor} font={font} text={text}/>}></Route>
-          <Route path="/projects" element={<Project themeChange={themeChange} font={font} headcolor={headcolor} text={text} />}></Route>
+          <Route path="/" element={<Home themeChange={themeChange}  headcolor={headcolor} text={text}/>}></Route>
+          <Route path="/about" element={<About themeChange={themeChange}  headcolor={headcolor} text={text}/>}></Route>
+          <Route path="/contact" element={<Contact  themeChange={themeChange} headcolor={headcolor}  text={text} />}></Route>
+          <Route path="/skills" element={<Skill themeChange={themeChange} headcolor={headcolor}  text={text}/>}></Route>
+          <Route path="/projects" element={<Project themeChange={themeChange} headcolor={headcolor} text={text} />}></Route>
         </Routes>
         <Downbar />
       </div>

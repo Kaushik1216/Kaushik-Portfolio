@@ -2,7 +2,14 @@ import React from 'react'
 import '../style/navbar.css'
 import { useNavigate} from 'react-router-dom';
 import { useState } from 'react';
+import { useSelector,useDispatch } from 'react-redux';
+import { darktheme } from '../actions';
+import { lighttheme } from '../actions';
 export default function Navbar(props) {
+
+  const themecolor = useSelector((state)=>state.changeThetheme);
+  const dispatch =useDispatch();
+  console.log(themecolor.background);
   const navigate = useNavigate();
   const [active,setactive]=useState({"home":true,"about":false,"skills":false,"project":false,"contact":false});
   const homePage = () => {
@@ -53,7 +60,8 @@ export default function Navbar(props) {
       <div className="theme" style={{color:`${props.text}`,border:`2px solid ${props.text}`}} >
       <input type="checkbox"  className="checkbox" id="checkbox" name="checkBox" onChange={props.themeChange}/><label htmlFor="checkbox" className="label">
   
-      <i className={`fa-solid fa-1x fa-${props.font}`} ></i>
+      <i className={`fa-solid fa-1x fa-moon`}  style={{display:themecolor.background==="#F8F8F8"?"":"none"}} onClick={()=>dispatch(lighttheme())}></i>
+      <i className={`fa-solid fa-1x fa-sun`} style={{display:themecolor.background==="#191919"?"":"none  "}} onClick={()=>dispatch(darktheme())}></i>
   
       </label>
       </div>
