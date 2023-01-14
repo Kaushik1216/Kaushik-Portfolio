@@ -52,7 +52,7 @@ export default function Home() {
                
                 {/* <div></div> */}
                 <motion.div>
-                <div className="codeup">{`${code.firstline}`}<br/>{`${code.second}`}<br id="break"/><br/>{`${code.middleone}`}</div>
+                <div className="codeup text-center">{`${code.firstline}`}<br/>{`${code.second}`}<br id="break"/><br/>{`${code.middleone}`}</div>
                   <motion.h5
                   variants={item}
                   initial="hidden"
