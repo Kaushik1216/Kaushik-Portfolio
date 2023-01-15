@@ -20,15 +20,17 @@ function App() {
     if (mode === "light") {
       setmode("dark")
       document.body.style.background="#191919"
+      const favicon = document.getElementById("favicon");
       favicon.href='favicondark.png';
-      console.log(favicon.href)
+      console.log(favicon)
       setkaushik(faviicondark);
     } else {
       setmode("light")
       setkaushik(faviiconlight);
       document.body.style.background="#F8F8F8"
+      const favicon = document.getElementById("favicon");
       favicon.href='faviconlight.png';
-      console.log(favicon.href)
+      console.log(favicon)
     }
   };
   return (

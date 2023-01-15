@@ -1,29 +1,9 @@
 import React ,{useRef}from "react";
 import '../style/downbar.css'
 import { Link } from 'react-router-dom';
+import { useState ,useNavigate} from "react";
 export default function Downbar() {
-  // const [windowSize, setWindowSize] = useState(getWindowSize());
 
-  // useEffect(() => {
-  //   function handleWindowResize() {
-  //     setWindowSize(getWindowSize());
-  //   }
-
-  //   window.addEventListener('resize', handleWindowResize);
-
-  //   return () => {
-  //     window.removeEventListener('resize', handleWindowResize);
-  //   };
-  // }, []);
-  // function getWindowSize() {
-  //   const {innerWidth, innerHeight} = window;
-  //   if(innerWidth<701){
-  //     downbar.current.style.display="none";
-  //     arrowt.current.style.display="none";
-  //   }
-  //   return {innerWidth, innerHeight};
-  // }
-  // console.log(windowSize.innerWidth);
   const arrowup=useRef(null);
   const arrowdown=useRef(null);
   const downbar=useRef(null);
@@ -40,6 +20,20 @@ export default function Downbar() {
       display.current.className="arrow1";
     }
   }
+  // const navigate = useNavigate();
+
+  const about = () => {
+    document.title="Kaushik | About";
+  }
+  const skills = () => {
+    document.title="Kaushik | Skills";
+  }
+  const project= () => {
+    document.title="Kaushik | Projects";
+  }
+  const contact = () => {
+    document.title="Kaushik | Contact";
+  }
   return (
     <>  
     <div className="align"  >
@@ -55,19 +49,19 @@ export default function Downbar() {
       <div className="row down">
         <div className="col">
          <div className="row"><i className="fa-solid fa-info" style={{color:"#fff"}}></i></div> 
-          <div className="row"><Link to="/about">About</Link></div>
+          <div className="row" onClick={about}><Link to="/about">About</Link></div>
         </div>
         <div className="col">
         <div className="row"><i className="fa-solid fa-rocket"style={{color:"#fff"}}></i></div> 
-          <div className="row"> <Link to="/skills">Skills</Link></div>
+          <div className="row" onClick={skills}> <Link to="/skills">Skills</Link></div>
           </div>
           <div className="col">
         <div className="row"><i className="fa-solid fa-heart"style={{color:"#fff"}}></i></div> 
-          <div className="row"> <Link to="/projects">Project</Link></div>
+          <div className="row" onClick={project}> <Link to="/projects">Project</Link></div>
         </div>
         <div className="col">
         <div className="row"><i className="fa-solid fa-info"style={{color:"#fff"}}></i></div> 
-          <div className="row"> <Link to="/contact">Contact</Link></div>
+          <div className="row" onClick={contact}> <Link to="/contact">Contact</Link></div>
        </div>
        
       </div>

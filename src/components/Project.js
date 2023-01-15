@@ -1,7 +1,8 @@
 import React from "react";
 import "../style/project.css";
 import { selfProject,contr,urllist,reponame } from "../datas/projectdata";
-import Projectcard from "./subcomponent/Projectcard";
+import Projectcard1 from "./subcomponent/Projectcard1";
+import Projectcard2 from "./subcomponent/Projectcard2";
 import { useState } from "react";
 import { useSelector } from "react-redux";
 export default function Project() {
@@ -36,7 +37,7 @@ export default function Project() {
           <div className="row " style={{color:`${themecolor.textcolor}`}}>
          
             {selfProject.map((element) => {
-              return <Projectcard e={element} key={element.projectCount} view={element.viewcode} />;
+              return <Projectcard1 e={element} key={element.projectCount} view={element.viewcode} />;
             })}
             
         </div>
@@ -48,7 +49,7 @@ export default function Project() {
 
           <div className="row "  style={{color:`${themecolor.textcolor}`}}>
             {contr.map((element) => {
-              return <Projectcard e={element} key={element.projectCount} view={element.viewcode} headcolor={hcolor} text={textcolor} cstyle={cstyle}/>;
+              return <Projectcard2 e={element} key={element.projectCount} view={element.viewcode} headcolor={hcolor} text={textcolor} cstyle={cstyle}/>;
             })}
         </div>
           </div>

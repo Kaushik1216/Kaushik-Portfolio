@@ -5,21 +5,23 @@ import { useRef } from 'react';
 import {motion} from "framer-motion";
 import { Twitter2 ,Facebook2,Linkdin2,Instagram2,Twitter2l,Facebook2l,Instagram2l,Linkdin2l} from "../datas/socialicon";
 import { useSelector } from 'react-redux';
+import styled from 'styled-components';
+
 export default function Contact() {
-  const themecolor = useSelector((state)=>state.changeThetheme);
-
+  
   const form=useRef()
-   const sendmail =(e)=>{
+  const sendmail =(e)=>{
     e.preventDefault();
-
+    
     emailjs.sendForm('service_8yv3on1', 'template_71fj839', form.current, '46M5VR9yZGLRuZYYn')
-      .then((result) => {
-         alert("your email send")
-      }, (error) => {
-          alert("Error occure")
-      });
-   }
-   
+    .then((result) => {
+      alert("your email send")
+    }, (error) => {
+      alert("Error occure")
+    });
+  }
+  
+  const themecolor = useSelector((state)=>state.changeThetheme);
 const container = {
   hidden: { opacity: 1, scale: 0 },
   visible: {
@@ -63,7 +65,22 @@ const item3 = {
 // function map(){
 //   window.location.replace("https://www.google.com/maps/d/u/0/viewer?msa=0&ie=UTF8&t=h&source=embed&vpsrc=0&z=12&mid=1QdUiFNGmF3zr_84PrAJFTcpQaAw&ll=18.930320128560858%2C72.83583616882323")
 // }
-console.log(themecolor.textcolor);
+// const Button = styled.button`
+// background-color:${themecolor.background};
+// color:${themecolor.textcolor};
+// border:2px solid ${themecolor.headcolor};
+// border-radius: 3px;
+// background: linear-gradient(to right, ${themecolor.headcolor} 50%, white 50%);
+// transition: all .5s ease-out;
+// background-size: 200% 100%;
+// background: rotate(20deg);
+// background-position: right bottom;
+// &:hover{
+// background-color:${themecolor.headcolor};
+// color:${themecolor.background};
+// background-position: left bottom;
+// }
+// `
   return (
     <>
     <div className="container-fluid mx-auto">
@@ -109,7 +126,7 @@ console.log(themecolor.textcolor);
               </div>
               <div className="row mt-2 pd-2 button" >
                 <div className="col button2" >
-                <button type="Submit" className=' form-btn-contact'>Send</button>
+                <button type="Submit" className='form-btn-contact' style={{border:`2px solid ${themecolor.headcolor}`,backgroundColor:`${themecolor.background}`,color:`${themecolor.textcolor}`}}><span>Send</span></button>
                 </div>
                 </div>    
                 </div>                                                                                      

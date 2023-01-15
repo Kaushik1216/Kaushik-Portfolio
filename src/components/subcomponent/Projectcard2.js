@@ -24,23 +24,10 @@ export default function Projectcard(props) {
     //  useEffect(()=>{
     //     fun();
     //  },[])
-
+  console.log("PROJECT DATA ",props.e.project)
   return (
     <>
-      <div className="col-sm-12 col-md-4 col-12 d-flex justify-content-center" style={{display:`${props.e.project==="self"?"":"none"}`}}>
-      <div className="projectcard" style={{border:`1px solid ${themecolor.headcolor}`}}>
-
-    <h4 className="pname">{props.e.projectName}</h4>
-    <p className="pinfo">{props.e.projectInfo}</p>
-    <hr style={{border:`1px solid ${themecolor.headcolor}`}}/>
-    <p className="pmade">{props.e.madewith}</p>
-    <a href={props.e.viewcode} rel="noreferrer"target="_blank" style={{color:`${themecolor.textcolor}`}}><button className='f-btn' style={{border:`2px solid ${themecolor.headcolor}`,backgroundColor:`${themecolor.background}`,color:`${themecolor.textcolor}`}}>View code</button></a>
-      </div>
-  </div>
-      <div
-        className="col-sm-12 col-md-4 col-12 d-flex justify-content-center"
-        style={{ display: `${props.e.project === "contr" ? "" : "none"}` }}
-      >
+      <div className="col-sm-12 col-md-4 col-12 d-flex justify-content-center" style={{ display: `${props.e.project === "contr" ? "" : "none"}` }}>
         <div className=" projectcard" style={{border:`1px solid ${themecolor.headcolor}`}}>
           <h4 className="pname">{props.e.projectName}</h4>
           <p className="pinfo">{props.e.projectInfo}</p>
