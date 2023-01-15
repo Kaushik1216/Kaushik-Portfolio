@@ -1,5 +1,5 @@
 .pageinfo{
-    font-size: 60px;
+    font-size: 55px;
     font-weight:bolder;
 }
 .skill-row{
@@ -8,6 +8,7 @@
     align-items: center;
 
 }
+
 .second{
     margin-bottom: 40px;
 }
@@ -57,16 +58,8 @@
     /* background-color:#5E84E8; */
     /* background-color:#09EECC; */
 }
-.star{
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline-block;
 
-}
-.secstar{
-    position: absolute;
-    right: 0px;
-}
+
 @media  screen and (max-width:600px) {
     .pageinfo{
         font-size: 20px;
@@ -79,3 +72,12 @@
     }
     
  }
+
+@media screen and (max-width:767px) {
+    .lastrow{
+        padding-bottom: 50px!important;
+    }
+    .code {
+        margin-left: 6%;
+        }
+}

@@ -44,9 +44,9 @@ export default function Home() {
     }
   return (
     <>
-      <div class="container-fluid main_header">
-        <div class="row">
-          <div class=" col-12 mx-auto">
+      <div className="container-fluid main_header">
+        <div className="row">
+          <div className=" col-12 mx-auto">
             <div className="row">
               <div className="col-md-6 col-12 " id="kaushik" style={{color:`${themecolor.textcolor}`}}>
                
@@ -116,7 +116,7 @@ export default function Home() {
               </div>
               <div className="col-md-6 col-12" id="imgdiv">
                 <div id="img">
-                  <img src={me} alt="kaushi" style={{}}/>
+                  <img src={me} alt="kaushik" />
                 </div>
               </div>
             </div>

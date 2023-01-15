@@ -19,10 +19,10 @@ export default function Project() {
     <>
       <div >
         <div className="row" >
-          <p className="pageinfo" >
+          <p className="pageinfo  justify-content-center" >
             <div className="row">
               <div className="col-6 text-center head" >
-               <span className="rowhead" onClick={()=>{change("selfproject")}} style={{color:current==="selfproject"?`${themecolor.headcolor}`:`${themecolor.textcolor}`}}> My Projects 
+               <span className="text-center rowhead" onClick={()=>{change("selfproject")}} style={{color:current==="selfproject"?`${themecolor.headcolor}`:`${themecolor.textcolor}`}}> My Projects 
                 </span>
               </div>
               <div className="col-6 text-center head" onClick={()=>{change("contrproject")}} style={{color:current==="contrproject"?`${themecolor.headcolor}`:`${themecolor.textcolor}`}}>Conributions Projects

@@ -27,7 +27,7 @@ export default function Projectcard(props) {
 
   return (
     <>
-      <div className="col-sm-6 col-md-4 onemore" style={{display:`${props.e.project==="self"?"":"none"}`}}>
+      <div className="col-sm-12 col-md-4 col-12 d-flex justify-content-center" style={{display:`${props.e.project==="self"?"":"none"}`}}>
       <div className="projectcard" style={{border:`1px solid ${themecolor.headcolor}`}}>
 
     <h4 className="pname">{props.e.projectName}</h4>
@@ -38,7 +38,7 @@ export default function Projectcard(props) {
       </div>
   </div>
       <div
-        className="col-4 onemore"
+        className="col-sm-12 col-md-4 col-12 d-flex justify-content-center"
         style={{ display: `${props.e.project === "contr" ? "" : "none"}` }}
       >
         <div className=" projectcard" style={{border:`1px solid ${themecolor.headcolor}`}}>

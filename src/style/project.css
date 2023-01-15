@@ -7,6 +7,8 @@
     flex-direction: column;
     /* justify-content: flex-end; */
      width: 320px;
+
+     /* min-width: 300px; */
     /* align-items: center; */
     border-radius: 15px;
     margin-left: 40px;
@@ -14,6 +16,11 @@
     box-sizing: border-box; 
     position: relative;
 }
+/* .pageinfo{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 10px;
+} */
 .pageinfo .head{
     font-size: 35px;
     font-weight: 600;
@@ -23,22 +30,26 @@
 .pageinfo .rowhead{
     padding: 5px;
     border-radius: 3px;
+
 }
 .prow{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-left: -20px;
+    /* margin-left: -20px; */
     width: 96%;
-    height: 600px;
-    overflow-y: auto;
-    padding-top: 100px;
-    scrollbar-width: 0px;
+    /* height: 600px; */
+    /* overflow-y: auto; */
+    padding-top: 10px;
+    /* scrollbar-width: 0px; */
+    /* padding-bottom: 50px; */
+    /* padding-top: 20px; */
 }
-.prow::-webkit-scrollbar {
+
+/* .prow::-webkit-scrollbar {
     display: none;
-  }
+  } */
 .pageinfo{
   font-size: 40px;
  position: sticky;
@@ -68,6 +79,7 @@
     justify-content: center;
     align-items: center;
     margin-left: 5px;
+    
 }
 
 .f-btn {
@@ -115,7 +127,29 @@
     width: 320px;
 } */
 .projectcard hr{
-    background-color: black;
-    border:1px solid black;
     margin-bottom: 20px!important;
+}
+@media screen and (min-width:767px){
+    .prow{
+     margin-bottom: 100px;
+    }
+    
+
+}
+@media screen and (max-width:767px) {
+    .pageinfo .head{
+        font-size: 15px;
+        
+    }
+    .pageinfo{
+        margin-top:20px ;
+        margin-left: -18px;
+    }
+    .projectcard{
+        min-width: 300px;
+
+    }
+    /* .prow{
+        margin-left: -27px;
+    } */
 }

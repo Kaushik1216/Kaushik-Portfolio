@@ -22,8 +22,9 @@
    border:none;
 }
 .text .pageinfo{
-    font-size: 60px;
+    font-size: 55px;
     font-weight:bolder;
+    margin-top:"-13px"
     /* margin-top: -10px; */
 }
 .text{
@@ -33,10 +34,13 @@
    
     margin-left: -35px;
 }
+.title{
+    margin-bottom: 20px;
+}
 .inputgroup input{
     outline:none;
     margin-top:40px;
-     border-radius: 5px;
+    border-radius: 5px;
     width: 100%;
     position: relative;
     padding: 10px 10px 10px 10px;
@@ -100,7 +104,24 @@
 }
 
 
-.button .button2 .form-btn-contact::after{
+@media screen and (max-width:767px) {
+  .skillpage .pageinfo{
+    text-align: center;
+  }
+  .text .pageinfo{
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 10px;
+  }
+  .rightrowup{
+    margin-top: 40px;
+  }
+}
+
+.svgvertical{
+    z-index: 12 !important;;
+}
+/* .button .button2 .form-btn-contact::after{
     height: 100%;
     left: -35%;
     top:0;
@@ -112,4 +133,4 @@
 .button .button2 .form-btn-contact:after{
     height: 100%;
     width: 135%;
-}
+} */

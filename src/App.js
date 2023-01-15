@@ -21,12 +21,14 @@ function App() {
       setmode("dark")
       document.body.style.background="#191919"
       favicon.href='favicondark.png';
+      console.log(favicon.href)
       setkaushik(faviicondark);
     } else {
       setmode("light")
       setkaushik(faviiconlight);
       document.body.style.background="#F8F8F8"
       favicon.href='faviconlight.png';
+      console.log(favicon.href)
     }
   };
   return (
@@ -38,6 +40,7 @@ function App() {
           <Route path="/contact" element={<Contact/>}></Route>
           <Route path="/skills" element={<Skill/>}></Route>
           <Route path="/projects" element={<Project/>}></Route>
+          <Route path="*" element={<Home  />}></Route>
         </Routes>
         <Downbar />
       </div>

@@ -64,12 +64,18 @@
 
 #imgdiv #img img{
     margin-bottom: 30px;
+    height: 85%;
+
 }
 
 @media screen and (max-width:900px) and (min-width:700px){
     #imgdiv #img img{
         height: 95%;
         width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media screen and (max-width:780px) {
@@ -77,17 +83,17 @@
         justify-content: center;
         height: 100%;
     }
-    #imgdiv #img img{
-        height: 85%;
+    /* #imgdiv #img img{
+        height: %;
         width: 85%;
-    }
+    } */
     /* #kaushik {
         justify-content: center;
         display: none;
     } */
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:768px) {
     .main_header #kaushik {
         margin-top: 30px;
         margin-bottom: 50px;
@@ -134,6 +140,9 @@
         justify-content: center;
         align-items: center;
     }
+    #imgdiv{
+        display: none;
+    }
 }
 @media screen and (max-width:700px){
     .main_header #kaushik,.codeup,.codedown{
@@ -148,15 +157,24 @@
     #imgdiv #img img{
         margin-left: -20px;
     }
+    .main_header #kaushik{
+        margin-top: 15vh;
+        margin-bottom: 10vh;
+    }
 }
 @media screen and (max-width:550px) {
     #imgdiv #img img{
-        /* margin-left: -50px;
-        margin-top: -30px; */
+        margin-left: -50px;
+        margin-top: -30px;
         /* width: 80%; */
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+    }
+}
+@media scree and (max-width:321px){
+    .codeup{
+        margin-bottom: 15px;
     }
 }
