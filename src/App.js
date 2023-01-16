@@ -20,16 +20,16 @@ function App() {
     if (mode === "light") {
       setmode("dark")
       document.body.style.background="#191919"
-      const favicon = document.getElementById("favicon");
-      favicon.href='favicondark.png';
+      // const favicon = document.getElementById("favicon");
+      favicon.href="%PUBLIC_URL%/favicondark.png" ;
       console.log(favicon)
       setkaushik(faviicondark);
     } else {
       setmode("light")
       setkaushik(faviiconlight);
       document.body.style.background="#F8F8F8"
-      const favicon = document.getElementById("favicon");
-      favicon.href='faviconlight.png';
+      // const favicon = document.getElementById("favicon");
+      favicon.href="%PUBLIC_URL%/faviconlight.png" ;
       console.log(favicon)
     }
   };
