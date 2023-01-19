@@ -18,7 +18,7 @@ export default function About() {
         <p className="about-content" style={{color:`${themecolor.textcolor}`}}>
         Hi, My name is  Kaushik Vishwakarma .I am currently pursuing Btech in Computer Science        and Engineering from IIT MANDI.Always keep exploring and learning new technology.<br/>
         I currently know DSA,Web development,Basic of Machine learning .Always Interested in contributing in open-source projects,helping people and Freeliance
-      <br/> I have recently developed many webdevelopment and machine-learning projects.
+      <br/> I have recently developed many webdevelopment and machine-learning projects.I am a quick learner and am always eager to take on new challenges and expand my skill set. 
       <br/>
       <br/>
       </p>

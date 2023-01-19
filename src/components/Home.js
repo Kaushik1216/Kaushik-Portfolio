@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../style/home.css";
 import { Twitter ,Facebook,Github,Linkdin,Twitterl,Facebookl,Githubl,Linkdinl} from "../datas/socialicon";
 import me from "./images/me1.png";
@@ -42,6 +42,22 @@ export default function Home() {
         setCode(html)
       }
     }
+    function  makeTimer(){
+      setInterval(() => {
+        let rand = Math.floor(Math.random() * 10) + 1
+         if(rand>=1 && rand<=4){
+          setCode(coder);
+         }else if( rand<=7){
+          setCode(fulls)
+         }else{
+           setCode(html);
+
+         }
+      }, 8000)
+    }
+    useEffect(()=>{
+      makeTimer();
+    })
   return (
     <>
       <div className="container-fluid main_header">
