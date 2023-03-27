@@ -1,7 +1,7 @@
 import React from "react";
 import "../../style/project.css";
-// import { NavLink } from 'react-router-dom';
-// import { useEffect} from 'react';
+import { NavLink } from 'react-router-dom';
+import { useEffect} from 'react';
 import { useSelector } from "react-redux";
 import { useState } from "react";
 export default function Projectcard(props) {
@@ -9,21 +9,21 @@ export default function Projectcard(props) {
   const [commit, setcommit] = useState(0);
   const [rank, setrank] = useState(0);
 
-    //  const fun=async()=>{
-    //   const response = await fetch(props.e.url);
-    //   console.log("Dtata" , props.e.projectName)
-    //       const data = await response.json();
-    //             for(var i=0;i<data.length;i++){
-    //                if(data[i].login==="Kaushik1216"){
-    //                   const temp={"Rank":i+1,"Commits":data[i].contributions}
-    //                   setrank(i+1);
-    //                   setcommit(data[i].contributions)
-    //                }
-    //             }
-    //  }
-    //  useEffect(()=>{
-    //     fun();
-    //  },[])
+     const fun=async()=>{
+      const response = await fetch(props.e.url);
+      console.log("Dtata" , props.e.projectName)
+          const data = await response.json();
+                for(var i=0;i<data.length;i++){
+                   if(data[i].login==="Kaushik1216"){
+                      const temp={"Rank":i+1,"Commits":data[i].contributions}
+                      setrank(i+1);
+                      setcommit(data[i].contributions)
+                   }
+                }
+     }
+     useEffect(()=>{
+        fun();
+     },[])
   console.log("PROJECT DATA ",props.e.project)
   return (
     <>
