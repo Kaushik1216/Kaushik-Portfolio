@@ -68,7 +68,10 @@
     height: 85%;
 
 }
-
+#imgdiv #homeimg{
+    margin-top: 90px;
+    margin-right: 50px;
+}
 @media screen and (max-width:900px) and (min-width:700px){
     #imgdiv #img img{
         height: 95%;
