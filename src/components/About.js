@@ -11,7 +11,7 @@ export default function About() {
           About Me
         </p>
         <div className="row mx-auto">
-          <div className="col-md-6 col-push-12" id="smallimgdiv">
+          <div className="col-md-6 col-sm-12" id="smallimgdiv">
             <div id="smallimg">
             <figure class="image-container">
               <div class="aspect-ratio-box">
@@ -22,13 +22,13 @@ export default function About() {
                   width="1920"
                   height="1282"
                   loading="lazy"
-                  style={{ borderColor: `${themecolor.headcolor}` }}
+                  style={{border:`3px solid ${themecolor.headcolor}` }}
                 />
               </div>
             </figure>
             </div>
           </div>
-          <div className="col-md-6 col-12 leftabout">
+          <div className="col-md-6 col-sm-12 leftabout">
             <p
               className="about-content"
               style={{ color: `${themecolor.textcolor}` }}

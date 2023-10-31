@@ -71,18 +71,18 @@ font-weight: bold;
   #about #imgdiv #img img{
     margin-top: 0px;
   }
-  #about #smallimgdiv #smallimg img{
+  #about #smallimgdiv #smallimg{
     /* width:50%; */
-    width: 80%;
+    /* width: 100%;
     height: 60%;
     display: none ;
     /* padding-left: 150px; */
-    margin-left:45px;
+   /* margin-left:45px;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom:15px ;
+    /*margin-bottom:15px ; */
   }
   #about{
     /* margin-left: 2%; */
