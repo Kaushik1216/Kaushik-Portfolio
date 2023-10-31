@@ -10,6 +10,7 @@ import { useState } from "react";
 import faviiconlight from "./components/images/faviconlight.png"
 import faviicondark from "./components/images/favicondark.png"
 import { useSelector } from "react-redux";
+import { useEffect } from "react";
 // import Projectcard from "./components/subcomponent/Projectcard";
 import About from "./components/About";
 // import favicondark from './components/images/favicondark.png'
@@ -17,25 +18,28 @@ function App() {
   const themecolor = useSelector((state)=>state.changeThetheme);
   const [kaushik,setkaushik]=useState(faviiconlight);
   const favicon = document.getElementById("favicon");
-  const [mode,setmode]=useState("light");
+  const [mode,setmode]=useState("");
   const themeChange = () => {
     const link = document.querySelector('link[rel="icon"]');
-    if (mode === "light") {
+    if (mode === "dark") {
+      setmode("light")
+      setkaushik(faviiconlight);
+      // const favicon = document.getElementById("favicon");
+      document.body.style.background="#F8F8F8";
+      link.setAttribute('href', 'faviconlight.png');
+    } else {
       setmode("dark")
       document.body.style.background="#061119";
       // document.body.style.background="#0B1D2A";
       // const favicon = document.getElementById("favicon");
       // favicon.href="%PUBLIC_URL%/favicondark.png" ;
-      link.setAttribute('href', '%PUBLIC_URL%/favicondark.png');
+      link.setAttribute('href', 'favicondark.png');
       setkaushik(faviicondark);
-    } else {
-      setmode("light")
-      setkaushik(faviiconlight);
-      // const favicon = document.getElementById("favicon");
-      document.body.style.background="#F8F8F8";
-      link.setAttribute('href', '%PUBLIC_URL%/faviconlight.png');
     }
   };
+  useEffect(() => {
+    themeChange();
+  }, []);
   return (
       <div className="App" id="app">
         <Navbar themeChange={themeChange} kaushik={kaushik} />
