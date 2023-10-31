@@ -49,19 +49,19 @@ export default function Downbar() {
       <div className="row down">
         <div className="col">
          <div className="row"><i className="fa-solid fa-info" style={{color:"#fff"}}></i></div> 
-          <div className="row" onClick={about}><Link to="/about">About</Link></div>
+          <div className="row" onClick={about}><Link to="/Portfolio/about">About</Link></div>
         </div>
         <div className="col">
         <div className="row"><i className="fa-solid fa-rocket"style={{color:"#fff"}}></i></div> 
-          <div className="row" onClick={skills}> <Link to="/skills">Skills</Link></div>
+          <div className="row" onClick={skills}> <Link to="/Portfolio/experience">Skills</Link></div>
           </div>
           <div className="col">
         <div className="row"><i className="fa-solid fa-heart"style={{color:"#fff"}}></i></div> 
-          <div className="row" onClick={project}> <Link to="/projects">Project</Link></div>
+          <div className="row" onClick={project}> <Link to="/Portfolio/works">Work</Link></div>
         </div>
         <div className="col">
         <div className="row"><i className="fa-solid fa-info"style={{color:"#fff"}}></i></div> 
-          <div className="row" onClick={contact}> <Link to="/contact">Contact</Link></div>
+          <div className="row" onClick={contact}> <Link to="/Portfolio/contact">Contact</Link></div>
        </div>
        
       </div>

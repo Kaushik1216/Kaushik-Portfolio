@@ -3,8 +3,12 @@ import "../style/project.css";
 import { selfProject,contr,urllist,reponame } from "../datas/projectdata";
 import Projectcard1 from "./subcomponent/Projectcard1";
 import Projectcard2 from "./subcomponent/Projectcard2";
+import Projectcard from "./subcomponent/Projectcard";
 import { useState } from "react";
+import Popup from 'react-popup';
+import {projectdata} from '../datas/projectnewdata';
 import { useSelector } from "react-redux";
+// #0B1D2A
 export default function Project() {
   const themecolor = useSelector((state)=>state.changeThetheme);
   const [current,setcurrent]=useState("selfproject");
@@ -17,8 +21,19 @@ export default function Project() {
     border:`1px solid ${themecolor.headcolor}`
   }
   return (
-    <>
-      <div >
+    <> 
+    <div style={{marginLeft:"-27px"}}>
+    <div className="mb-lg-5 mb-md-3 mb-sm-2">
+    <div className="skillpage"style={{color:`${themecolor.textcolor}`}}>
+    <p className="pageinfo"style={{color:`${themecolor.headcolor}`}}> My Work</p>
+    </div>
+    <div className="row g-3 d-flex justify-content-center">
+    {projectdata.map((item, index) => (
+        <Projectcard key={index} item={item} themecolor={themecolor} headcolor={themecolor.headcolor}/>
+      ))}
+    </div>
+   </div>
+      {/* <div >
         <div className="row" >
           <p className="pageinfo  justify-content-center" >
             <div className="row">
@@ -56,7 +71,8 @@ export default function Project() {
 
         </div>
         
-      </div>
+      </div> */}
+    </div>
     </>
   );
 }

@@ -274,10 +274,11 @@ export default function Home() {
                       width="1920"
                       height="1282"
                       loading="lazy"
-                      style={{ borderColor: `${themecolor.headcolor}` }}
+                      style={{border:`3px solid ${themecolor.headcolor}` }}
                     />
                   </div>
                 </figure>
+                
               </div>
             </div>
           </div>

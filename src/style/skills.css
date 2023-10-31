@@ -1,6 +1,7 @@
 .pageinfo{
-    font-size: 55px;
+    font-size: 10px;
     font-weight:bolder;
+    text-align: center; 
 }
 .skill-row{
     display: flex;
@@ -58,7 +59,10 @@
     /* background-color:#5E84E8; */
     /* background-color:#09EECC; */
 }
-
+#skillpage #smallscreenexp{
+    display: "none";
+    height: 100vh;
+}
 
 @media  screen and (max-width:600px) {
     .pageinfo{
@@ -67,10 +71,9 @@
     }
 }
 @media  screen and (max-width:780px) {
-     .pageinfo{
+    .pageinfo{
      font-size: 30px;
     }
-    
  }
 
 @media screen and (max-width:767px) {
@@ -81,3 +84,9 @@
         margin-left: 6%;
         }
 }
+
+/* @media screen and (min-width:767px) {
+    #bigscreenexp{
+        display: "none";
+    }
+} */

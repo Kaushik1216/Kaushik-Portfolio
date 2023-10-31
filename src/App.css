@@ -6,7 +6,12 @@
 }
 body{
     background-color:#ECECEC;
-    transition: 0.5s;
+    transition: 0.3s;
+    scrollbar-width: none;
+    scroll-behavior: smooth;
+}
+body::-webkit-scrollbar{
+    display: none;
 }
 #app{
     margin-left: 6%;
