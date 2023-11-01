@@ -48,19 +48,19 @@ export default function Downbar() {
       
       <div className="row down">
         <div className="col">
-         <div className="row"><i className="fa-solid fa-info" style={{color:"#fff"}}></i></div> 
+         <div className="row"><i className="fa-solid fa-info" aria-hidden="true" style={{color:"#fff"}}></i></div> 
           <div className="row" onClick={about}><Link to="/Portfolio/about">About</Link></div>
         </div>
         <div className="col">
-        <div className="row"><i className="fa-solid fa-rocket"style={{color:"#fff"}}></i></div> 
+        <div className="row"><i className="fa-solid fa-rocket" aria-hidden="true" style={{color:"#fff"}}></i></div> 
           <div className="row" onClick={skills}> <Link to="/Portfolio/experience">Skills</Link></div>
           </div>
           <div className="col">
-        <div className="row"><i className="fa-solid fa-heart"style={{color:"#fff"}}></i></div> 
+        <div className="row"><i className="fa-solid fa-heart" aria-hidden="true"style={{color:"#fff"}}></i></div> 
           <div className="row" onClick={project}> <Link to="/Portfolio/works">Work</Link></div>
         </div>
         <div className="col">
-        <div className="row"><i className="fa-solid fa-info"style={{color:"#fff"}}></i></div> 
+        <div className="row"><i className="fa-solid fa-address-book"aria-hidden="true" style={{color:"#fff"}}></i></div> 
           <div className="row" onClick={contact}> <Link to="/Portfolio/contact">Contact</Link></div>
        </div>
        
