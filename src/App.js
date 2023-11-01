@@ -29,7 +29,8 @@ function App() {
       link.setAttribute('href', 'faviconlight.png');
     } else {
       setmode("dark")
-      document.body.style.background="#061119";
+      document.body.style.background="#091E2D";
+      // document.body.style.background="#061119";
       // document.body.style.background="#0B1D2A";
       // const favicon = document.getElementById("favicon");
       // favicon.href="%PUBLIC_URL%/favicondark.png" ;

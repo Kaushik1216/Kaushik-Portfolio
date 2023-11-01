@@ -6,10 +6,12 @@ export default function About() {
   const themecolor = useSelector((state) => state.changeThetheme);
   return (
     <>
+    <div className="skillpage text-center text"style={{color:`${themecolor.textcolor}`}}>
+    <p className="pageinfo"style={{color:`${themecolor.headcolor}`}}>About Me</p>
+    <h6 >
+    </h6>
+    </div>
       <div id="about">
-        <p className="topic" style={{ color: `${themecolor.headcolor}` }}>
-          About Me
-        </p>
         <div className="row mx-auto">
           <div className="col-md-6 col-sm-12" id="smallimgdiv">
             <div id="smallimg">

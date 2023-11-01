@@ -22,12 +22,16 @@ export default function Project() {
   }
   return (
     <> 
+    <div className="skillpage text-center text"style={{color:`${themecolor.textcolor}`}}>
+    <p className="pageinfo"style={{color:`${themecolor.headcolor}`}}>My Work</p>
+    <h6 >
+      More comming soon . .
+    </h6>
+    </div>
     <div style={{marginLeft:"-27px"}}>
     <div className="mb-lg-5 mb-md-3 mb-sm-2">
-    <div className="skillpage"style={{color:`${themecolor.textcolor}`}}>
-    <p className="pageinfo"style={{color:`${themecolor.headcolor}`}}> My Work</p>
-    </div>
-    <div className="row g-3 d-flex justify-content-center">
+    
+    <div className="row g-3 d-flex justify-content-center mt-2">
     {projectdata.map((item, index) => (
         <Projectcard key={index} item={item} themecolor={themecolor} headcolor={themecolor.headcolor}/>
       ))}

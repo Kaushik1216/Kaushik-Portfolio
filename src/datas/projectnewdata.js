@@ -60,6 +60,15 @@ export const projectdata = [
       viewcode: "https://github.com/Kaushik1216/credit-managment-system",
     }
     ,
+      {
+      projectCount: 3,
+      name: "Joomla Article Filter Module",
+      projectInfo: "A Joomla module (extension) that filters articles on a website by article category, publish,modified,created in Ascending or Dscending order, restricts the number of articles in the module, and allows users to display different information about the articles they want to showcase on the list",
+      image:"images/jafm.png",
+      tech: ["JoomlaFramework" , "PHP","OOPS"],
+      viewcode: "https://github.com/Kaushik1216/Joomla_module_articles_filter",
+    }
+    ,
     {
       projectCount: 3,
       name: "WebNews",

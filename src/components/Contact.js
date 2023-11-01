@@ -138,6 +138,12 @@ export default function Contact() {
   // `
   return (
     <>
+    <div className="skillpage text-center text"style={{color:`${themecolor.textcolor}`}}>
+    <p className="pageinfo"style={{color:`${themecolor.headcolor}`}}>Let's Connect</p>
+    <h6 >
+    Do you speak Hindi? It's ok if you don't, I speak English too.
+    </h6>
+    </div>
       <div className="container-fluid mx-auto">
         <div className="first">
           <div
@@ -146,23 +152,12 @@ export default function Contact() {
           >
             <div className="row mx-auto">
               <div className="col-md-6 col-12">
-                <div className="text">
-                  <p
-                    className="pageinfo"
-                    style={{ color: `${themecolor.headcolor}` }}
-                  >
-                    Contact
-                  </p>
-                  <h6 className="mt-100" style={{ marginLeft: "4px" }}>
-                    Do you speak Hindi? It's ok if you don't, I speak English
-                    too.
-                  </h6>
-                </div>
                 <form
                   ref={form}
                   onSubmit={sendmail}
                   id="form"
-                  style={{ marginTop: "-15px" }}
+                  className="contactform"
+                  style={{ marginTop: "-25px" }}
                 >
                   <div className="container-fluid">
                     <div className="row">

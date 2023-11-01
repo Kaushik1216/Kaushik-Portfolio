@@ -13,7 +13,7 @@
     justify-content: space-around;
 }
 .rightrowup{
-    margin-top: 90px;
+    margin-top: 30px;
 }
 .rightrowdown{
     margin-bottom: 100px;
@@ -27,11 +27,11 @@
     margin-top:"-13px"
     /* margin-top: -10px; */
 }
-.text{
-   margin-left: -30px;
+.text .pageinfo{
+   /* margin-left: -30px; */
+   /* text-align: start; */
 }
 #form{
-   
     margin-left: -35px;
 }
 .title{
@@ -82,10 +82,14 @@
     
 }
 
+
 @media  screen and (max-width:600px) {
     .text .pageinfo{
         font-size: 20px;
         font-weight: 800;
+    }
+    .text{
+        margin-left: 0px;
     }
 }
 @media  screen and (max-width:780px) {
@@ -94,6 +98,7 @@
    }
    .text .pageinfo{
     font-size: 30px;
+    text-align: center;
    }
    .rightrow .rightrowdown,.rightrowup{
     text-align: center;
@@ -112,6 +117,7 @@
     text-align: center;
     margin: 0px;
     margin-bottom: 10px;
+    margin-left: 0px;
   }
   .rightrowup{
     margin-top: 40px;
@@ -121,6 +127,10 @@
 .svgvertical{
     z-index: 12 !important;;
 }
+
+/* @media screen {
+    
+} */
 /* .button .button2 .form-btn-contact::after{
     height: 100%;
     left: -35%;
