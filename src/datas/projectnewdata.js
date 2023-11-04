@@ -11,9 +11,9 @@ export const projectdata = [
     {
       projectCount: 1,
       name: "Migrate To Joomla",
-      projectInfo: "Create an Joomla extension that migrates websites from different platforms, such as WordPress, Drupal, to Joomla. Develop the outer shell of the extension that can be easily expanded to support multiple platforms. Implement WordPress migration to Joomla, including database and media migration. For media migration, provide three options: File System, FTP, and HTTP",
+      projectInfo: "Create an Joomla extension that migrates websites from different platforms, such as WordPress, Drupal, to Joomla. Develope the outer shell of the extension that can be easily expanded to support multiple platforms. Implement WordPress migration to Joomla, including database and media migration. For media migration, provide three options: File System, FTP, and HTTP.For database migration, identify the possible mapping between the WordPress and Joomla databases, and write SQL queries to import data into the Joomla database.",
       image:"images/migratetojoomla.png",
-      tech: ["JoomlaFramework" , "PHP" ,"JS","CSS","Bootstrap","OOPS"],
+      tech: ["JoomlaFramework" , "PHP","MySQL" ,"JS","CSS","Bootstrap","OOPS"],
       viewcode: "https://github.com/Kaushik1216/soc23_joomla-converter",
     }
     ,
